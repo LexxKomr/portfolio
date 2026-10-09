@@ -52,7 +52,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 /* ---------- hero ---------- */
 .hero-band { position: relative; overflow: hidden; }
-.hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(16px, 3vw, 56px); align-items: center; min-height: min(calc(100svh - 64px), 800px); padding-block: clamp(14px, 2.5vw, 36px) clamp(36px, 5vw, 72px); }
+.hero { --hero-pb: clamp(36px, 5vw, 72px); display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(16px, 3vw, 56px); align-items: center; min-height: min(calc(100svh - 64px), 800px); padding-block: clamp(14px, 2.5vw, 36px) var(--hero-pb); }
 .hero-copy { container-type: inline-size; }
 .hero-title { font: 400 min(clamp(4.2rem, 10.6vw, 10.4rem), 21.5cqw)/.9 var(--f-display); letter-spacing: -.012em; text-transform: uppercase; color: var(--ink); white-space: nowrap; }
 .hero-title .ln { display: block; padding: .08em 0 .1em; margin: -.08em 0 -.1em; clip-path: inset(0 -100vmax 0 -.15em); }
@@ -74,7 +74,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .hero-art .c-salmon { left: 6cqw; top: 17.5cqw; width: 76cqw; background: var(--orange); overflow: hidden; z-index: 2; }
 .hero-art .c-salmon img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
 .hero-art .c-teal { left: 37.5cqw; top: 54.7cqw; width: 96.5cqw; background: var(--teal); z-index: 4; }
-.hero-art .person { position: absolute; left: 44cqw; bottom: 3cqw; height: 88cqw; width: auto; max-width: none; transform: translateX(-50%); filter: drop-shadow(0 20px 18px rgba(58, 31, 64, .3)); z-index: 3; }
+.hero-art .person { position: absolute; left: 39.5cqw; bottom: calc(-1 * var(--hero-pb)); height: 100cqw; width: auto; max-width: none; transform: translateX(-50%); filter: drop-shadow(0 20px 18px rgba(58, 31, 64, .3)); z-index: 3; }
 .hero-art .spark { z-index: 5; position: absolute; right: 20cqw; top: 10.5cqw; width: 11cqw; aspect-ratio: 1; fill: var(--paper); }
 .hero-art .spark.small { left: 1cqw; top: auto; bottom: 26cqw; width: 5cqw; fill: var(--orange); right: auto; }
 .name-pill { position: absolute; z-index: 6; right: 5cqw; bottom: 15cqw; display: inline-grid; grid-template-columns: auto auto; align-items: center; gap: 10px 14px; background: color-mix(in srgb, var(--ink) 92%, transparent); color: var(--paper); border: 1.5px solid var(--orange); border-radius: 999px; padding: 16px 30px 16px 34px; font: 500 clamp(.9rem, 1.35vw, 1.2rem)/1.25 var(--f-text); text-transform: uppercase; letter-spacing: .2em; text-align: center; }

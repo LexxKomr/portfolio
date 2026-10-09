@@ -5,8 +5,8 @@
       "en": "Graphic designer portfolio"
     },
     "description": {
-      "ru": "Портфолио графического дизайнера: бренд и события, полиграфия, digital-баннеры, моушн и интерфейсы. Реальные проекты для технологических компаний.",
-      "en": "Graphic designer portfolio: brand and events, print, digital banners, motion and interfaces. Real projects for technology companies."
+      "ru": "Портфолио графического дизайнера: бренд и события, полиграфия, digital-баннеры, моушн и интерфейсы. Реальные проекты для технологических компаний",
+      "en": "Graphic designer portfolio: brand and events, print, digital banners, motion and interfaces. Real projects for technology companies"
     }
   },
   "theme": {
@@ -213,6 +213,7 @@
       "Illustrator",
       "InDesign",
       "After Effects",
+      "Premiere Pro",
       "PowerPoint",
       "Figma",
       "Superset",

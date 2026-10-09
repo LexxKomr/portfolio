@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://LexxKomr.github.io/portfolio/sitemap.xml

@@ -67,15 +67,17 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .btn { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; background: var(--ink); color: var(--paper); font-weight: 600; padding: 14px 28px; border-radius: 999px; border: 0; transition: background .2s, transform .2s var(--ease); }
 .btn:hover { background: var(--cobalt); transform: translateY(-2px); }
 
-.hero-art { position: relative; justify-self: end; width: min(100%, 600px); aspect-ratio: 1 / 1.04; }
-.hero-art .dome { position: absolute; left: 44%; right: -16%; top: -9%; bottom: 36%; background: var(--ink); border-radius: 999px 999px 0 0; }
-.hero-art .arch { position: absolute; left: 20%; right: 3%; top: 5%; bottom: 7%; background: var(--orange); border-radius: 999px 999px 0 0; overflow: hidden; }
-.hero-art .arch img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
-.hero-art .quarter { position: absolute; width: 36%; aspect-ratio: 1; right: -5%; bottom: 0; background: var(--teal); border-top-left-radius: 100%; }
-.hero-art .person { position: absolute; left: 61%; bottom: 7%; height: 92%; width: auto; max-width: none; transform: translateX(-50%); filter: drop-shadow(0 22px 22px rgba(58, 31, 64, .28)); }
-.hero-art .spark { position: absolute; right: 2%; top: 3%; width: 12%; aspect-ratio: 1; fill: var(--paper); }
-.hero-art .spark.small { left: 10%; top: auto; bottom: 18%; width: 6%; fill: var(--orange); right: auto; }
-.name-pill { position: absolute; right: -3%; bottom: 17%; display: inline-grid; grid-template-columns: auto auto; align-items: center; gap: 10px 14px; background: color-mix(in srgb, var(--ink) 92%, transparent); color: var(--paper); border: 1.5px solid var(--orange); border-radius: 999px; padding: 16px 30px 16px 34px; font: 500 clamp(.9rem, 1.35vw, 1.2rem)/1.25 var(--f-text); text-transform: uppercase; letter-spacing: .2em; text-align: center; }
+.hero-art { position: relative; justify-self: end; width: min(100%, 600px); aspect-ratio: 1 / 1.04; container-type: inline-size; }
+/* три круга: большой сливовый, внутри коралловый (смещён влево), бирюзовый срезает правый нижний угол */
+.hero-art .c-plum, .hero-art .c-salmon, .hero-art .c-teal { position: absolute; aspect-ratio: 1; border-radius: 50%; }
+.hero-art .c-plum { left: -1cqw; top: -2cqw; width: 111cqw; background: var(--ink); }
+.hero-art .c-salmon { left: 6cqw; top: 17.5cqw; width: 76cqw; background: var(--orange); overflow: hidden; }
+.hero-art .c-salmon img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+.hero-art .c-teal { left: 37.5cqw; top: 54.7cqw; width: 96.5cqw; background: var(--teal); }
+.hero-art .person { position: absolute; left: 44cqw; bottom: 3cqw; height: 88cqw; width: auto; max-width: none; transform: translateX(-50%); filter: drop-shadow(0 20px 18px rgba(58, 31, 64, .3)); }
+.hero-art .spark { position: absolute; right: 20cqw; top: 10.5cqw; width: 11cqw; aspect-ratio: 1; fill: var(--paper); }
+.hero-art .spark.small { left: 1cqw; top: auto; bottom: 26cqw; width: 5cqw; fill: var(--orange); right: auto; }
+.name-pill { position: absolute; right: -2cqw; bottom: 16cqw; display: inline-grid; grid-template-columns: auto auto; align-items: center; gap: 10px 14px; background: color-mix(in srgb, var(--ink) 92%, transparent); color: var(--paper); border: 1.5px solid var(--orange); border-radius: 999px; padding: 16px 30px 16px 34px; font: 500 clamp(.9rem, 1.35vw, 1.2rem)/1.25 var(--f-text); text-transform: uppercase; letter-spacing: .2em; text-align: center; }
 .name-pill svg { width: 18px; height: 18px; fill: var(--orange); }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; min-height: 0; }
@@ -87,17 +89,17 @@ button { font: inherit; color: inherit; cursor: pointer; }
 @media (prefers-reduced-motion: no-preference) {
   .intro .hero-title .ln > span { transform: translateY(105%); animation: rise .9s var(--ease) forwards; }
   .intro .hero-title .ln:nth-child(2) > span { animation-delay: .14s; }
-  .intro .hero-art .dome { transform: translateY(40%); opacity: 0; animation: slide .9s .1s var(--ease) forwards; }
-  .intro .hero-art .arch { clip-path: inset(100% 0 0 0); animation: grow 1.1s .25s var(--ease) forwards; }
-  .intro .hero-art .person { opacity: 0; transform: translate(-50%, 7%); animation: stand .9s .8s var(--ease) forwards; }
-  .intro .hero-art .quarter, .intro .hero-art .spark { transform: scale(0); animation: pop .7s 1.1s var(--ease) forwards; }
+  .intro .hero-art .c-plum { transform: scale(.35); opacity: 0; animation: bloom 1s .1s var(--ease) forwards; }
+  .intro .hero-art .c-salmon { transform: scale(.3); opacity: 0; animation: bloom 1s .35s var(--ease) forwards; }
+  .intro .hero-art .c-teal { transform: translate(14%, 14%) scale(.5); opacity: 0; animation: bloom .9s .6s var(--ease) forwards; }
+  .intro .hero-art .person { opacity: 0; transform: translate(-50%, 8%); animation: stand .9s .85s var(--ease) forwards; }
+  .intro .hero-art .spark { transform: scale(0); animation: pop .7s 1.15s var(--ease) forwards; }
   .intro .name-pill { opacity: 0; animation: fadeup .6s 1.25s var(--ease) forwards; }
   .intro .hero-meta > * { opacity: 0; transform: translateY(12px); animation: fadeup .6s var(--ease) forwards; }
   .intro .hero-meta > :nth-child(1) { animation-delay: .6s; } .intro .hero-meta > :nth-child(2) { animation-delay: .75s; } .intro .hero-meta > :nth-child(3) { animation-delay: .9s; }
 }
 @keyframes rise { to { transform: none; } }
-@keyframes slide { to { transform: none; opacity: 1; } }
-@keyframes grow { to { clip-path: inset(0 0 0 0); } }
+@keyframes bloom { to { transform: none; opacity: 1; } }
 @keyframes stand { to { opacity: 1; transform: translate(-50%, 0); } }
 @keyframes pop { to { transform: none; } }
 @keyframes fadeup { to { opacity: 1; transform: none; } }

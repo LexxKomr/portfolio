@@ -63,7 +63,7 @@ function hero(site) {
   const nameParts = t(p.name).trim().split(/\s+/);
   const nameHtml = nameParts.length > 1 ? `${esc(nameParts.slice(0, -1).join(' '))}<br>${esc(nameParts.at(-1))}` : esc(nameParts[0] || '');
   const photo = p.photo ? url(p.photo) : '';
-  const asArch = p.photoMode === 'arch';
+  const asCircle = p.photoMode === 'circle' || p.photoMode === 'arch'; // 'arch' — старое имя режима
   return `
   <section class="hero" id="top">
     <div class="hero-copy">
@@ -78,10 +78,10 @@ function hero(site) {
       </div>
     </div>
     <div class="hero-art">
-      <span class="dome"></span>
-      <span class="arch">${photo && asArch ? `<img src="${esc(photo)}" alt="${esc(t(p.name))}" fetchpriority="high">` : ''}</span>
-      <span class="quarter"></span>
-      ${photo && !asArch ? `<img class="person" src="${esc(photo)}" alt="${esc(t(p.name))}" fetchpriority="high">` : ''}
+      <span class="c-plum"></span>
+      <span class="c-salmon">${photo && asCircle ? `<img src="${esc(photo)}" alt="${esc(t(p.name))}" fetchpriority="high">` : ''}</span>
+      <span class="c-teal"></span>
+      ${photo && !asCircle ? `<img class="person" src="${esc(photo)}" alt="${esc(t(p.name))}" fetchpriority="high">` : ''}
       ${sparkle('spark')}${sparkle('spark small')}
       <span class="name-pill"><span>${nameHtml}</span>${sparkle()}</span>
     </div>

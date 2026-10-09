@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "title": { "ru": "Портфолио графического дизайнера", "en": "Graphic designer portfolio" },
+    "description": {
+      "ru": "Портфолио графического дизайнера: бренд и события, полиграфия, digital-баннеры, моушн и интерфейсы. Реальные проекты для технологических компаний.",
+      "en": "Graphic designer portfolio: brand and events, print, digital banners, motion and interfaces. Real projects for technology companies."
+    }
+  },
+  "theme": {
+    "paper": "#EEF3F0",
+    "ink": "#0D1B2A",
+    "orange": "#FF7B1C",
+    "teal": "#0B7F6F",
+    "cobalt": "#2B4C9B",
+    "peach": "#FFD9BD",
+    "ice": "#D3E6E0"
+  },
+  "sections": { "about": true, "work": true, "skills": true, "testimonials": false, "contact": true },
+  "person": {
+    "name": { "ru": "Ваше Имя", "en": "Your Name" },
+    "role": { "ru": "Графический дизайнер", "en": "Graphic designer" },
+    "photo": ""
+  },
+  "hero": {
+    "line1": { "ru": "Порт", "en": "Port" },
+    "line2": { "ru": "фолио", "en": "folio" },
+    "tagline": {
+      "ru": "Один визуальный язык: от визитки до выставочного стенда.",
+      "en": "One visual language, from a business card to an exhibition stand."
+    },
+    "cta": { "ru": "Смотреть работы", "en": "See the work" }
+  },
+  "about": {
+    "title": { "ru": "Дизайнер, который доводит макет до результата", "en": "A designer who takes a layout all the way to the result" },
+    "text": {
+      "ru": "Я графический дизайнер широкого профиля. Делаю фирменный стиль, печатные материалы, баннеры, анимацию и интерфейсы. Работаю в корпоративной среде, где одна идея должна жить в десятках форматов и выдерживать согласования.",
+      "en": "I am a versatile graphic designer. I make brand identities, print, banners, animation and interfaces. I work in a corporate setting where one idea has to live in dozens of formats and survive rounds of approval."
+    },
+    "pillars": [
+      {
+        "icon": "system",
+        "title": { "ru": "Системность", "en": "Systems thinking" },
+        "text": { "ru": "Один язык на баннере, листовке и стенде.", "en": "One language on a banner, a leaflet and a stand." }
+      },
+      {
+        "icon": "format",
+        "title": { "ru": "Адаптации", "en": "Adaptations" },
+        "text": { "ru": "Один макет в разных размерах без потери иерархии.", "en": "One layout in many sizes without losing hierarchy." }
+      },
+      {
+        "icon": "print",
+        "title": { "ru": "Производство", "en": "Production" },
+        "text": { "ru": "Файлы готовы к типографии и к площадке.", "en": "Files are ready for the printer and for the placement." }
+      }
+    ],
+    "statLabels": {
+      "cases": { "ru": "кейсов в портфолио", "en": "case studies" },
+      "directions": { "ru": "направлений работы", "en": "areas of work" },
+      "materials": { "ru": "материалов в галерее", "en": "pieces in the gallery" }
+    }
+  },
+  "work": {
+    "title": { "ru": "Избранные работы", "en": "Selected work" },
+    "all": { "ru": "Все", "en": "All" },
+    "open": { "ru": "Открыть кейс", "en": "Open case study" },
+    "note": {
+      "ru": "Проекты выполнены в штате компании. Права на материалы принадлежат заказчикам.",
+      "en": "Projects were done in-house. All rights to the materials belong to the clients."
+    }
+  },
+  "skills": {
+    "title": { "ru": "Что я делаю", "en": "What I do" },
+    "items": [
+      {
+        "icon": "brand",
+        "title": { "ru": "Бренд и события", "en": "Brand and events" },
+        "text": { "ru": "Айдентика мероприятий, визитки, сертификаты, фирменные носители.", "en": "Event identities, business cards, certificates, branded items." }
+      },
+      {
+        "icon": "print",
+        "title": { "ru": "Полиграфия", "en": "Print" },
+        "text": { "ru": "Листовки, one-pager’ы, лифлеты, подготовка к печати.", "en": "Leaflets, one-pagers, folded leaflets, print preparation." }
+      },
+      {
+        "icon": "banner",
+        "title": { "ru": "Digital и баннеры", "en": "Digital and banners" },
+        "text": { "ru": "Баннеры, рекламные модули, рассылки в десятках размеров.", "en": "Banners, ad modules and newsletters in dozens of sizes." }
+      },
+      {
+        "icon": "motion",
+        "title": { "ru": "Моушн", "en": "Motion" },
+        "text": { "ru": "Лёгкие анимированные баннеры: GIF и MP4 в жёстких лимитах веса.", "en": "Light animated banners: GIF and MP4 within strict weight limits." }
+      },
+      {
+        "icon": "ui",
+        "title": { "ru": "UI/UX", "en": "UI/UX" },
+        "text": { "ru": "Интерфейсы аналитических систем: дашборды, фильтры, карты.", "en": "Analytics interfaces: dashboards, filters, maps." }
+      },
+      {
+        "icon": "stand",
+        "title": { "ru": "Выставки и упаковка", "en": "Exhibition and packaging" },
+        "text": { "ru": "Стенды, брендинг оборудования, пакеты и мерч.", "en": "Stands, equipment branding, bags and merchandise." }
+      }
+    ],
+    "toolsTitle": { "ru": "Инструменты", "en": "Tools" },
+    "tools": ["Photoshop", "Illustrator", "InDesign", "After Effects", "PowerPoint"]
+  },
+  "testimonials": {
+    "title": { "ru": "Отзывы", "en": "Testimonials" },
+    "items": []
+  },
+  "contact": {
+    "title": { "ru": "Есть задача? Давайте обсудим.", "en": "Have a project? Let’s talk." },
+    "text": {
+      "ru": "Открыт к предложениям о работе и к проектам на стороне. Отвечаю в течение дня.",
+      "en": "Open to job offers and freelance projects. I reply within a day."
+    },
+    "button": { "ru": "Написать письмо", "en": "Send an email" },
+    "email": "hello@example.com",
+    "telegram": "",
+    "phone": "",
+    "behance": "",
+    "location": { "ru": "Москва", "en": "Moscow" },
+    "thanks": { "ru": "Спасибо, что заглянули.", "en": "Thanks for stopping by." }
+  },
+  "ui": {
+    "menuWork": { "ru": "Работы", "en": "Work" },
+    "menuAbout": { "ru": "Обо мне", "en": "About" },
+    "menuSkills": { "ru": "Навыки", "en": "Skills" },
+    "menuContact": { "ru": "Контакты", "en": "Contact" },
+    "skip": { "ru": "К содержимому", "en": "Skip to content" },
+    "back": { "ru": "Все работы", "en": "All work" },
+    "next": { "ru": "Следующий кейс", "en": "Next case study" },
+    "client": { "ru": "Заказчик", "en": "Client" },
+    "role": { "ru": "Задачи", "en": "Role" },
+    "year": { "ru": "Год", "en": "Year" },
+    "tools": { "ru": "Инструменты", "en": "Tools" },
+    "task": { "ru": "Задача", "en": "The task" },
+    "solution": { "ru": "Решение", "en": "The solution" },
+    "gallery": { "ru": "Материалы", "en": "Materials" },
+    "close": { "ru": "Закрыть", "en": "Close" },
+    "prev": { "ru": "Назад", "en": "Previous" },
+    "nextImg": { "ru": "Вперёд", "en": "Next" },
+    "notFound": { "ru": "Такого кейса нет.", "en": "That case study doesn’t exist." },
+    "loadError": { "ru": "Не удалось загрузить данные. Обновите страницу.", "en": "Couldn’t load the data. Please refresh." },
+    "currentWork": { "ru": "Сейчас на экране", "en": "Now showing" }
+  }
+}

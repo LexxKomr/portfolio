@@ -1,0 +1,1007 @@
+{
+  "categories": [
+    {
+      "id": "brand",
+      "title": {
+        "ru": "Бренд и события",
+        "en": "Brand & events"
+      },
+      "order": 1
+    },
+    {
+      "id": "uiux",
+      "title": {
+        "ru": "UI/UX",
+        "en": "UI/UX"
+      },
+      "order": 2
+    },
+    {
+      "id": "digital",
+      "title": {
+        "ru": "Digital и баннеры",
+        "en": "Digital & banners"
+      },
+      "order": 3
+    },
+    {
+      "id": "motion",
+      "title": {
+        "ru": "Моушн",
+        "en": "Motion"
+      },
+      "order": 4
+    },
+    {
+      "id": "print",
+      "title": {
+        "ru": "Полиграфия",
+        "en": "Print"
+      },
+      "order": 5
+    },
+    {
+      "id": "expo",
+      "title": {
+        "ru": "Выставки и упаковка",
+        "en": "Exhibition & packaging"
+      },
+      "order": 6
+    },
+    {
+      "id": "greetings",
+      "title": {
+        "ru": "Открытки и иллюстрации",
+        "en": "Cards & illustration"
+      },
+      "order": 7
+    }
+  ],
+  "works": [
+    {
+      "id": "cae-day",
+      "slug": "cae-day",
+      "category": "brand",
+      "year": "2025",
+      "order": 1,
+      "visible": true,
+      "featured": true,
+      "client": {
+        "ru": "Группа «Борлас» × Fidesys",
+        "en": "Borlas Group × Fidesys"
+      },
+      "badge": {
+        "ru": "Работа в штате · Группа «Борлас»",
+        "en": "In-house · Borlas Group"
+      },
+      "role": {
+        "ru": "Айдентика мероприятия, digital-материалы, адаптации",
+        "en": "Event identity, digital assets, adaptations"
+      },
+      "tags": [
+        "Photoshop",
+        "Illustrator",
+        "After Effects"
+      ],
+      "title": {
+        "ru": "CAE Day 2025",
+        "en": "CAE Day 2025"
+      },
+      "summary": {
+        "ru": "Визуальная система отраслевой конференции по инженерному анализу.",
+        "en": "Visual system for an engineering-analysis industry conference."
+      },
+      "task": {
+        "ru": "Собрать единый узнаваемый образ конференции для баннеров на сайтах-партнёрах, рассылок, рекламных модулей и всплывающих окон, при этом сохранить бренды двух компаний.",
+        "en": "Build one recognisable look for the conference across partner-site banners, newsletters, ad modules and pop-ups while keeping both company brands intact."
+      },
+      "solution": {
+        "ru": "Диагональ делит композицию на тёплую и холодную половины: оранжевый бренда Борлас встречается с бирюзово-синим Fidesys. В центре — расчётная модель турбины, она же визуально объясняет тему события. Тот же приём масштабируется от баннера 840×200 до рекламного модуля на полосу.",
+        "en": "A diagonal splits the layout into a warm and a cool half: the Borlas orange meets the Fidesys teal-blue. A turbine simulation model sits at the centre and explains the topic at a glance. The same device scales from an 840×200 banner to a full-page ad module."
+      },
+      "cover": "assets/works/cae-day/01-thumb.webp",
+      "hero": "assets/works/cae-day/hero.webp",
+      "heroPos": "50% 30%",
+      "coverW": 1800,
+      "coverH": 2340,
+      "images": [
+        {
+          "type": "image",
+          "thumb": "assets/works/cae-day/01-thumb.webp",
+          "full": "assets/works/cae-day/01-full.webp",
+          "w": 1800,
+          "h": 2340,
+          "alt": {
+            "ru": "Рекламный модуль CAE Day на всю полосу",
+            "en": "CAE Day full-page ad module"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/cae-day/02-thumb.webp",
+          "full": "assets/works/cae-day/02-full.webp",
+          "w": 1200,
+          "h": 800,
+          "alt": {
+            "ru": "Баннер CAE Day 1200×800",
+            "en": "CAE Day banner 1200×800"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/cae-day/03-thumb.webp",
+          "full": "assets/works/cae-day/03-full.webp",
+          "w": 1400,
+          "h": 400,
+          "alt": {
+            "ru": "Баннер для рассылки",
+            "en": "Newsletter banner"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/cae-day/04-thumb.webp",
+          "full": "assets/works/cae-day/04-full.webp",
+          "w": 1800,
+          "h": 846,
+          "alt": {
+            "ru": "Всплывающее окно CAE Day",
+            "en": "CAE Day pop-up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bi-system",
+      "slug": "bi-system",
+      "category": "uiux",
+      "year": "2026",
+      "order": 2,
+      "visible": true,
+      "featured": true,
+      "client": {
+        "ru": "Аналитическая BI-система",
+        "en": "Analytics BI system"
+      },
+      "badge": {
+        "ru": "Интерфейс",
+        "en": "Interface"
+      },
+      "role": {
+        "ru": "UX-структура, UI-дизайн 20+ экранов",
+        "en": "UX structure, UI design for 20+ screens"
+      },
+      "tags": [
+        "UI/UX",
+        "Dashboard",
+        "Data viz"
+      ],
+      "title": {
+        "ru": "BI-система для аналитиков внешней торговли",
+        "en": "BI system for foreign-trade analysts"
+      },
+      "summary": {
+        "ru": "Четыре предметные области, сквозные фильтры и три уровня детализации на каждом экране.",
+        "en": "Four subject areas, shared filters and three levels of detail on every screen."
+      },
+      "task": {
+        "ru": "Дать аналитикам один вход в разрозненные данные: итоги ВЭД, мировую торговлю, экспортный потенциал и торговлю услугами. Экран должен помогать сравнивать, а не просто показывать цифры.",
+        "en": "Give analysts a single entry point into scattered data: foreign-trade results, world trade, export potential and services trade. Each screen should help compare, not just display numbers."
+      },
+      "solution": {
+        "ru": "Каждый раздел устроен одинаково: «Свод», «Детализация», «Исходные данные». Фильтры живут сверху и сохраняются как шаблоны, показатели собраны в крупные плитки, карта и графики отвечают на один вопрос за раз. Цвет кодирует регион, размер — объём.",
+        "en": "Every section works the same way: Summary, Detail, Source data. Filters sit on top and can be saved as templates, key figures are large tiles, and the map and charts each answer one question. Colour encodes region, size encodes volume."
+      },
+      "cover": "assets/works/bi-system/01-thumb.webp",
+      "hero": "",
+      "heroPos": "50% 30%",
+      "coverW": 1800,
+      "coverH": 956,
+      "images": [
+        {
+          "type": "image",
+          "thumb": "assets/works/bi-system/01-thumb.webp",
+          "full": "assets/works/bi-system/01-full.webp",
+          "w": 1800,
+          "h": 956,
+          "alt": {
+            "ru": "Главная страница BI-системы",
+            "en": "BI system home page"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/bi-system/02-thumb.webp",
+          "full": "assets/works/bi-system/02-full.webp",
+          "w": 1800,
+          "h": 2853,
+          "alt": {
+            "ru": "Раздел «Мировая торговля», свод",
+            "en": "World trade section, summary"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/bi-system/03-thumb.webp",
+          "full": "assets/works/bi-system/03-full.webp",
+          "w": 1800,
+          "h": 863,
+          "alt": {
+            "ru": "Страница авторизации",
+            "en": "Sign-in page"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/bi-system/04-thumb.webp",
+          "full": "assets/works/bi-system/04-full.webp",
+          "w": 1800,
+          "h": 2102,
+          "alt": {
+            "ru": "Итоги ВЭД участников, свод",
+            "en": "Foreign-trade results, summary"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/bi-system/05-thumb.webp",
+          "full": "assets/works/bi-system/05-full.webp",
+          "w": 1800,
+          "h": 1865,
+          "alt": {
+            "ru": "Экспортный потенциал, свод",
+            "en": "Export potential, summary"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/bi-system/06-thumb.webp",
+          "full": "assets/works/bi-system/06-full.webp",
+          "w": 1800,
+          "h": 1669,
+          "alt": {
+            "ru": "Торговля услугами, свод",
+            "en": "Services trade, summary"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/bi-system/07-thumb.webp",
+          "full": "assets/works/bi-system/07-full.webp",
+          "w": 1800,
+          "h": 1344,
+          "alt": {
+            "ru": "Шаблоны фильтров",
+            "en": "Filter templates"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fidesys-promo",
+      "slug": "fidesys-promo",
+      "category": "digital",
+      "year": "2026",
+      "order": 3,
+      "visible": true,
+      "featured": true,
+      "client": {
+        "ru": "Группа «Борлас» × Fidesys",
+        "en": "Borlas Group × Fidesys"
+      },
+      "badge": {
+        "ru": "Работа в штате · Группа «Борлас»",
+        "en": "In-house · Borlas Group"
+      },
+      "role": {
+        "ru": "Баннеры в трёх форматах",
+        "en": "Banners in three formats"
+      },
+      "tags": [
+        "Photoshop",
+        "Adaptive layout"
+      ],
+      "title": {
+        "ru": "Акция «Определи свой уровень прочности»",
+        "en": "Promo “Find your strength level”"
+      },
+      "summary": {
+        "ru": "Один макет, три формата: горизонтальный, вертикальный и широкая шапка.",
+        "en": "One layout, three formats: landscape, portrait and a wide header."
+      },
+      "task": {
+        "ru": "Запустить акцию на экранах, в соцсетях и на сайте партнёра. Форматы разные, а акцию должны узнавать везде.",
+        "en": "Launch a promo on screens, social media and a partner site. Formats differ, but the promo has to be recognised everywhere."
+      },
+      "solution": {
+        "ru": "Крупная оранжевая плашка с заголовком держит композицию, серая — срок проведения. Фоновые полосы дают динамику и перестраиваются под каждый формат без потери иерархии.",
+        "en": "A large orange panel carries the headline and a grey one holds the dates. Background stripes add movement and re-flow for each format without losing hierarchy."
+      },
+      "cover": "assets/works/fidesys-promo/01-thumb.webp",
+      "hero": "assets/works/fidesys-promo/02-thumb.webp",
+      "heroPos": "50% 30%",
+      "coverW": 1800,
+      "coverH": 1013,
+      "images": [
+        {
+          "type": "image",
+          "thumb": "assets/works/fidesys-promo/01-thumb.webp",
+          "full": "assets/works/fidesys-promo/01-full.webp",
+          "w": 1800,
+          "h": 1013,
+          "alt": {
+            "ru": "Баннер акции 1920×1080",
+            "en": "Promo banner 1920×1080"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/fidesys-promo/02-thumb.webp",
+          "full": "assets/works/fidesys-promo/02-full.webp",
+          "w": 1080,
+          "h": 1920,
+          "alt": {
+            "ru": "Баннер акции 1080×1920",
+            "en": "Promo banner 1080×1920"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/fidesys-promo/03-thumb.webp",
+          "full": "assets/works/fidesys-promo/03-full.webp",
+          "w": 2400,
+          "h": 297,
+          "alt": {
+            "ru": "Широкий баннер 2427×300",
+            "en": "Wide banner 2427×300"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/fidesys-promo/04-thumb.webp",
+          "full": "assets/works/fidesys-promo/04-full.webp",
+          "w": 1500,
+          "h": 300,
+          "alt": {
+            "ru": "Иллюстрация для продвижения «Преферентум»",
+            "en": "Promo illustration for “Preferentum”"
+          }
+        }
+      ]
+    },
+    {
+      "id": "motion-banners",
+      "slug": "motion-banners",
+      "category": "motion",
+      "year": "2025",
+      "order": 4,
+      "visible": true,
+      "featured": true,
+      "client": {
+        "ru": "Группа «Борлас»",
+        "en": "Borlas Group"
+      },
+      "badge": {
+        "ru": "Работа в штате · Группа «Борлас»",
+        "en": "In-house · Borlas Group"
+      },
+      "role": {
+        "ru": "Анимация, подбор ритма, оптимизация веса",
+        "en": "Animation, pacing, file-size optimisation"
+      },
+      "tags": [
+        "After Effects",
+        "GIF / MP4"
+      ],
+      "title": {
+        "ru": "Анимированные баннеры",
+        "en": "Animated banners"
+      },
+      "summary": {
+        "ru": "Лёгкие петли для сайтов-партнёров: заметны, но не раздражают и весят меньше мегабайта.",
+        "en": "Light loops for partner sites: noticeable without being annoying, under a megabyte each."
+      },
+      "task": {
+        "ru": "Привлечь внимание на площадке с жёстким лимитом веса и без звука.",
+        "en": "Catch attention on a placement with a strict weight limit and no sound."
+      },
+      "solution": {
+        "ru": "Короткие циклы с одним акцентным движением, отдельные версии под разные размеры и с рекламой / без неё. Формат подбирался под площадку: GIF с узорным дизерингом или MP4.",
+        "en": "Short loops with one accent move, separate versions for different sizes, with and without the ad. The format fit the placement: GIF with pattern dithering or MP4."
+      },
+      "cover": "assets/works/motion-banners/cover.webp",
+      "hero": "",
+      "heroPos": "50% 30%",
+      "coverW": 1200,
+      "coverH": 900,
+      "images": [
+        {
+          "type": "video",
+          "video": "assets/works/motion-banners/01.mp4",
+          "poster": "assets/works/motion-banners/01-poster.webp",
+          "w": 728,
+          "h": 90,
+          "alt": {
+            "ru": "Анимация CAE Day, версия 2",
+            "en": "CAE Day animation, version 2"
+          }
+        },
+        {
+          "type": "video",
+          "video": "assets/works/motion-banners/02.mp4",
+          "poster": "assets/works/motion-banners/02-poster.webp",
+          "w": 728,
+          "h": 90,
+          "alt": {
+            "ru": "Анимация CAE Day, версия 3",
+            "en": "CAE Day animation, version 3"
+          }
+        },
+        {
+          "type": "video",
+          "video": "assets/works/motion-banners/03.mp4",
+          "poster": "assets/works/motion-banners/03-poster.webp",
+          "w": 728,
+          "h": 90,
+          "alt": {
+            "ru": "Анимация CAE Day, версия 1",
+            "en": "CAE Day animation, version 1"
+          }
+        },
+        {
+          "type": "video",
+          "video": "assets/works/motion-banners/04.mp4",
+          "poster": "assets/works/motion-banners/04-poster.webp",
+          "w": 1240,
+          "h": 200,
+          "alt": {
+            "ru": "Анимированный баннер для TAdviser",
+            "en": "Animated banner for TAdviser"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tflex-migration",
+      "slug": "tflex-migration",
+      "category": "digital",
+      "year": "2026",
+      "order": 5,
+      "visible": true,
+      "featured": false,
+      "client": {
+        "ru": "Группа «Борлас»",
+        "en": "Borlas Group"
+      },
+      "badge": {
+        "ru": "Работа в штате · Группа «Борлас»",
+        "en": "In-house · Borlas Group"
+      },
+      "role": {
+        "ru": "Инфографика, рекламный модуль, one-pager",
+        "en": "Infographic, ad module, one-pager"
+      },
+      "tags": [
+        "Illustrator",
+        "Infographic"
+      ],
+      "title": {
+        "ru": "Переход на T-FLEX PLM",
+        "en": "Migration to T-FLEX PLM"
+      },
+      "summary": {
+        "ru": "Сложную тему миграции PLM-систем нужно было показать на одной полосе.",
+        "en": "A complex PLM-migration topic had to fit on one page."
+      },
+      "task": {
+        "ru": "Объяснить за несколько секунд, от чего уходят, куда идут и что получают. Модуль идёт в отраслевое издание, а one-pager — клиентам.",
+        "en": "Explain in seconds what is being left behind, where to and what is gained. The module runs in an industry publication, the one-pager goes to clients."
+      },
+      "solution": {
+        "ru": "Композиция читается слева направо: проблемы старой системы, стрелки перехода, выгоды новой. Иконки одного стиля и цвета бренда собирают тезисы в узнаваемые группы.",
+        "en": "The layout reads left to right: problems of the old system, transition arrows, benefits of the new one. Icons in a single style and brand colour group the points."
+      },
+      "cover": "assets/works/tflex-migration/01-thumb.webp",
+      "hero": "",
+      "heroPos": "50% 30%",
+      "coverW": 1800,
+      "coverH": 1157,
+      "images": [
+        {
+          "type": "image",
+          "thumb": "assets/works/tflex-migration/01-thumb.webp",
+          "full": "assets/works/tflex-migration/01-full.webp",
+          "w": 1800,
+          "h": 1157,
+          "alt": {
+            "ru": "Рекламный модуль «Переход на T-FLEX PLM»",
+            "en": "“Migration to T-FLEX PLM” ad module"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/tflex-migration/02-thumb.webp",
+          "full": "assets/works/tflex-migration/02-full.webp",
+          "w": 1147,
+          "h": 1600,
+          "alt": {
+            "ru": "One-pager по миграции на T-FLEX PLM",
+            "en": "One-pager on T-FLEX PLM migration"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/tflex-migration/03-thumb.webp",
+          "full": "assets/works/tflex-migration/03-full.webp",
+          "w": 1350,
+          "h": 270,
+          "alt": {
+            "ru": "Иллюстрация для TAdviser",
+            "en": "Illustration for TAdviser"
+          }
+        }
+      ]
+    },
+    {
+      "id": "leaflets",
+      "slug": "leaflets",
+      "category": "print",
+      "year": "2025–2026",
+      "order": 6,
+      "visible": true,
+      "featured": false,
+      "client": {
+        "ru": "Группа «Борлас»",
+        "en": "Borlas Group"
+      },
+      "badge": {
+        "ru": "Работа в штате · Группа «Борлас»",
+        "en": "In-house · Borlas Group"
+      },
+      "role": {
+        "ru": "Макеты, инфографика, подготовка к печати",
+        "en": "Layouts, infographics, print preparation"
+      },
+      "tags": [
+        "InDesign",
+        "Illustrator",
+        "Photoshop"
+      ],
+      "title": {
+        "ru": "Листовки и one-pager’ы",
+        "en": "Leaflets and one-pagers"
+      },
+      "summary": {
+        "ru": "Серия материалов для выставок и продаж: от услуг техподдержки до промышленной автоматизации.",
+        "en": "A series for trade shows and sales: from technical support to industrial automation."
+      },
+      "task": {
+        "ru": "Упаковать плотный технический контент в листовки, которые читают на стенде за минуту.",
+        "en": "Pack dense technical content into leaflets that people can read at a stand within a minute."
+      },
+      "solution": {
+        "ru": "Крупные заголовки, блоки с цифрами и цветные плашки задают порядок чтения. Лучше всего получилась листовка выставки ДЦС: цвет делит смысловые блоки, цифры вынесены на первый план.",
+        "en": "Large headings, number blocks and colour panels set the reading order. The strongest is the DCS exhibition leaflet: colour separates the meaning blocks and the numbers come first."
+      },
+      "cover": "assets/works/leaflets/01-thumb.webp",
+      "hero": "",
+      "heroPos": "50% 30%",
+      "coverW": 1800,
+      "coverH": 2525,
+      "images": [
+        {
+          "type": "image",
+          "thumb": "assets/works/leaflets/01-thumb.webp",
+          "full": "assets/works/leaflets/01-full.webp",
+          "w": 1800,
+          "h": 2525,
+          "alt": {
+            "ru": "Листовка выставки ДЦС",
+            "en": "DCS exhibition leaflet"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/leaflets/02-thumb.webp",
+          "full": "assets/works/leaflets/02-full.webp",
+          "w": 1270,
+          "h": 1783,
+          "alt": {
+            "ru": "Листовка «Центр технической поддержки»",
+            "en": "Leaflet “Technical support centre”"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/leaflets/03-thumb.webp",
+          "full": "assets/works/leaflets/03-full.webp",
+          "w": 1800,
+          "h": 2512,
+          "alt": {
+            "ru": "Листовка сервиса ЦТП",
+            "en": "CTP service leaflet"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/leaflets/04-thumb.webp",
+          "full": "assets/works/leaflets/04-full.webp",
+          "w": 1270,
+          "h": 1783,
+          "alt": {
+            "ru": "Листовка «Управление жизненным циклом изделий»",
+            "en": "Leaflet “Product lifecycle management”"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/leaflets/05-thumb.webp",
+          "full": "assets/works/leaflets/05-full.webp",
+          "w": 1270,
+          "h": 1783,
+          "alt": {
+            "ru": "Листовка «Центр цифровой трансформации на 1С»",
+            "en": "Leaflet “Digital transformation centre on 1C”"
+          }
+        }
+      ]
+    },
+    {
+      "id": "greetings",
+      "slug": "greetings",
+      "category": "greetings",
+      "year": "2025–2026",
+      "order": 7,
+      "visible": true,
+      "featured": true,
+      "client": {
+        "ru": "Группа «Борлас»",
+        "en": "Borlas Group"
+      },
+      "badge": {
+        "ru": "Работа в штате · Группа «Борлас»",
+        "en": "In-house · Borlas Group"
+      },
+      "role": {
+        "ru": "Концепция, иллюстрация, вёрстка",
+        "en": "Concept, illustration, layout"
+      },
+      "tags": [
+        "Photoshop",
+        "Illustration"
+      ],
+      "title": {
+        "ru": "Праздничные открытки",
+        "en": "Holiday greeting cards"
+      },
+      "summary": {
+        "ru": "Корпоративные поздравления, которые хочется переслать: у каждой открытки своя тема и своё настроение.",
+        "en": "Corporate greetings worth forwarding: every card has its own subject and mood."
+      },
+      "task": {
+        "ru": "Поздравлять сотрудников, партнёров и клиентов, не повторяясь и оставаясь в рамках фирменного стиля.",
+        "en": "Greet staff, partners and clients without repeating yourself and while staying within the brand."
+      },
+      "solution": {
+        "ru": "Для каждой даты — своя среда: зимний городок на катке, ночной офис в лесу, письма и газеты военных лет, химическая лаборатория. Бренд присутствует через цвет и логотип, а не через шаблон.",
+        "en": "Each date gets its own world: a winter town with a rink, an office glowing in a night forest, wartime letters and newspapers, a chemistry lab. The brand is carried by colour and logo, not by a template."
+      },
+      "cover": "assets/works/greetings/01-thumb.webp",
+      "hero": "assets/works/greetings/01-thumb.webp",
+      "heroPos": "50% 30%",
+      "coverW": 1800,
+      "coverH": 1590,
+      "images": [
+        {
+          "type": "image",
+          "thumb": "assets/works/greetings/01-thumb.webp",
+          "full": "assets/works/greetings/01-full.webp",
+          "w": 1800,
+          "h": 1590,
+          "alt": {
+            "ru": "Новогодняя открытка Borlas Edit",
+            "en": "New Year card for Borlas Edit"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/greetings/02-thumb.webp",
+          "full": "assets/works/greetings/02-full.webp",
+          "w": 1800,
+          "h": 1591,
+          "alt": {
+            "ru": "Новогодняя открытка Борлас",
+            "en": "New Year card for Borlas"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/greetings/03-thumb.webp",
+          "full": "assets/works/greetings/03-full.webp",
+          "w": 1800,
+          "h": 1013,
+          "alt": {
+            "ru": "Открытка ко Дню Победы",
+            "en": "Victory Day card"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/greetings/04-thumb.webp",
+          "full": "assets/works/greetings/04-full.webp",
+          "w": 1800,
+          "h": 1013,
+          "alt": {
+            "ru": "Открытка ко Дню химика",
+            "en": "Chemist’s Day card"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/greetings/05-thumb.webp",
+          "full": "assets/works/greetings/05-full.webp",
+          "w": 1800,
+          "h": 1013,
+          "alt": {
+            "ru": "Открытка ко Дню эколога",
+            "en": "Ecologist’s Day card"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expo-stand",
+      "slug": "expo-stand",
+      "category": "expo",
+      "year": "2025",
+      "order": 8,
+      "visible": true,
+      "featured": false,
+      "client": {
+        "ru": "Borlas Edit",
+        "en": "Borlas Edit"
+      },
+      "badge": {
+        "ru": "Работа в штате · Группа «Борлас»",
+        "en": "In-house · Borlas Group"
+      },
+      "role": {
+        "ru": "Концепция и макеты выставочного стенда, лифлета и упаковки",
+        "en": "Concept and artwork for stand, leaflet and packaging"
+      },
+      "tags": [
+        "Illustrator",
+        "Large format"
+      ],
+      "title": {
+        "ru": "Выставочный стенд и упаковка Borlas Edit",
+        "en": "Borlas Edit exhibition stand and packaging"
+      },
+      "summary": {
+        "ru": "Стенд, лифлет с двумя фальцами и фирменная упаковка в одном стиле.",
+        "en": "A stand, a double-fold leaflet and branded packaging in one style."
+      },
+      "task": {
+        "ru": "Показать компетенции центра цифровой трансформации, партнёрские статусы и проекты в формате, который читается с расстояния и вблизи.",
+        "en": "Present the digital-transformation centre’s expertise, partner statuses and projects in a format that reads from afar and up close."
+      },
+      "solution": {
+        "ru": "Три смысловые зоны стенда: компетенции, ключевые цифры и контакты со статусами партнёра. Тёмно-синий фон усиливает оранжевые акценты, иконки и изометрия объясняют направления без текста. Тот же язык переходит на лифлет и пакет.",
+        "en": "The stand has three zones: expertise, key figures, and contacts with partner statuses. A deep-blue ground lifts the orange accents, while icons and isometric drawings explain directions without text. The same language carries over to the leaflet and the bag."
+      },
+      "cover": "assets/works/expo-stand/01-thumb.webp",
+      "hero": "",
+      "heroPos": "50% 30%",
+      "coverW": 2400,
+      "coverH": 646,
+      "images": [
+        {
+          "type": "image",
+          "thumb": "assets/works/expo-stand/01-thumb.webp",
+          "full": "assets/works/expo-stand/01-full.webp",
+          "w": 2400,
+          "h": 646,
+          "alt": {
+            "ru": "Развёртка стен выставочного стенда",
+            "en": "Exhibition stand wall layout"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/expo-stand/02-thumb.webp",
+          "full": "assets/works/expo-stand/02-full.webp",
+          "w": 940,
+          "h": 697,
+          "alt": {
+            "ru": "Лифлет, внешняя сторона",
+            "en": "Leaflet, outside"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/expo-stand/03-thumb.webp",
+          "full": "assets/works/expo-stand/03-full.webp",
+          "w": 939,
+          "h": 702,
+          "alt": {
+            "ru": "Лифлет, внутренняя сторона",
+            "en": "Leaflet, inside"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/expo-stand/04-thumb.webp",
+          "full": "assets/works/expo-stand/04-full.webp",
+          "w": 1299,
+          "h": 794,
+          "alt": {
+            "ru": "Макет фирменного пакета",
+            "en": "Branded bag artwork"
+          }
+        }
+      ]
+    },
+    {
+      "id": "server-cabinet",
+      "slug": "server-cabinet",
+      "category": "expo",
+      "year": "2026",
+      "order": 9,
+      "visible": true,
+      "featured": false,
+      "client": {
+        "ru": "Борлас × НПЦ БАС ЯО",
+        "en": "Borlas × NPC BAS YaO"
+      },
+      "badge": {
+        "ru": "Работа в штате · Группа «Борлас»",
+        "en": "In-house · Borlas Group"
+      },
+      "role": {
+        "ru": "Графика брендинга серверного шкафа",
+        "en": "Server-cabinet branding artwork"
+      },
+      "tags": [
+        "Illustrator",
+        "Large format"
+      ],
+      "title": {
+        "ru": "Брендинг серверного шкафа",
+        "en": "Server cabinet branding"
+      },
+      "summary": {
+        "ru": "Тёмная графика с дроном и сетью точек превращает техническое оборудование в витрину проекта.",
+        "en": "Dark artwork with a drone and a node network turns hardware into a project showcase."
+      },
+      "task": {
+        "ru": "Оформить серверный шкаф проекта беспилотных систем региона так, чтобы он выглядел как экспонат, а не как стойка в серверной.",
+        "en": "Brand a server cabinet for a regional unmanned-systems project so it looks like an exhibit and not just a rack."
+      },
+      "solution": {
+        "ru": "Линейный дрон на графитовом фоне и тонкая сеть связей говорят о теме без лишних слов. Герб и логотипы собраны по вертикальной оси, а оранжевая линия отделяет партнёров от основной композиции.",
+        "en": "A line-art drone on graphite and a fine network of links speak to the theme in few words. The coat of arms and logos run along a vertical axis, and an orange line separates the partners from the main composition."
+      },
+      "cover": "assets/works/server-cabinet/01-thumb.webp",
+      "hero": "assets/works/server-cabinet/01-thumb.webp",
+      "heroPos": "50% 58%",
+      "coverW": 1735,
+      "coverH": 3200,
+      "images": [
+        {
+          "type": "image",
+          "thumb": "assets/works/server-cabinet/01-thumb.webp",
+          "full": "assets/works/server-cabinet/01-full.webp",
+          "w": 1735,
+          "h": 3200,
+          "alt": {
+            "ru": "Макет широкой стороны шкафа",
+            "en": "Wide side artwork"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/server-cabinet/02-thumb.webp",
+          "full": "assets/works/server-cabinet/02-full.webp",
+          "w": 710,
+          "h": 960,
+          "alt": {
+            "ru": "Пример применения на шкафу",
+            "en": "Cabinet mockup"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/server-cabinet/03-thumb.webp",
+          "full": "assets/works/server-cabinet/03-full.webp",
+          "w": 1280,
+          "h": 960,
+          "alt": {
+            "ru": "Пример применения на шкафу, вид 2",
+            "en": "Cabinet mockup, view 2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cards-certificates",
+      "slug": "cards-certificates",
+      "category": "brand",
+      "year": "2025–2026",
+      "order": 10,
+      "visible": true,
+      "featured": false,
+      "client": {
+        "ru": "Группа «Борлас»",
+        "en": "Borlas Group"
+      },
+      "badge": {
+        "ru": "Работа в штате · Группа «Борлас»",
+        "en": "In-house · Borlas Group"
+      },
+      "role": {
+        "ru": "Визитки, шаблон сертификата",
+        "en": "Business cards, certificate template"
+      },
+      "tags": [
+        "Illustrator",
+        "InDesign"
+      ],
+      "title": {
+        "ru": "Визитки и сертификат",
+        "en": "Business cards and certificate"
+      },
+      "summary": {
+        "ru": "Небольшие носители бренда, из которых складывается впечатление о компании.",
+        "en": "Small brand carriers that shape the impression of a company."
+      },
+      "task": {
+        "ru": "Сделать визитки для компании и совместного проекта с партнёром, а также сертификат об аттестации инженеров с подписями двух сторон.",
+        "en": "Create business cards for the company and a joint partner project, plus a certificate of engineer attestation signed by both sides."
+      },
+      "solution": {
+        "ru": "Визитки: спокойный светлый вариант со светящимися волнами и тёмная версия с крупным слоганом. Сертификат: орнаментальная рамка в цветах бренда и крупная гарнитура с засечками для имени получателя.",
+        "en": "Cards: a calm light version with glowing waves and a dark one with a large slogan. Certificate: an ornamental frame in brand colours and a large serif for the recipient’s name."
+      },
+      "cover": "assets/works/cards-certificates/01-thumb.webp",
+      "hero": "",
+      "heroPos": "50% 30%",
+      "coverW": 1800,
+      "coverH": 2546,
+      "images": [
+        {
+          "type": "image",
+          "thumb": "assets/works/cards-certificates/01-thumb.webp",
+          "full": "assets/works/cards-certificates/01-full.webp",
+          "w": 1800,
+          "h": 2546,
+          "alt": {
+            "ru": "Сертификат об аттестации",
+            "en": "Attestation certificate"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/cards-certificates/02-thumb.webp",
+          "full": "assets/works/cards-certificates/02-full.webp",
+          "w": 767,
+          "h": 426,
+          "alt": {
+            "ru": "Визитка Борлас × Bering Pro",
+            "en": "Business card Borlas × Bering Pro"
+          }
+        },
+        {
+          "type": "image",
+          "thumb": "assets/works/cards-certificates/03-thumb.webp",
+          "full": "assets/works/cards-certificates/03-full.webp",
+          "w": 1600,
+          "h": 889,
+          "alt": {
+            "ru": "Визитка компании",
+            "en": "Company business card"
+          }
+        }
+      ]
+    }
+  ]
+}

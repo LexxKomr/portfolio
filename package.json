@@ -1,0 +1,21 @@
+{
+  "name": "designer-portfolio",
+  "version": "1.0.0",
+  "description": "Сайт-портфолио (GitHub Pages) с админкой",
+  "scripts": {
+    "serve": "node tools/serve.mjs",
+    "seed": "node tools/seed.mjs",
+    "test": "node tools/test-core.mjs",
+    "e2e": "node tools/e2e-run.mjs"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@fontsource/marck-script": "^5.3.0",
+    "@fontsource/onest": "^5.3.1",
+    "@fontsource/prata": "^5.3.0",
+    "ffmpeg-static": "^5.3.0",
+    "puppeteer-core": "^25.13.0",
+    "sharp": "^0.35.5"
+  },
+  "private": true
+}

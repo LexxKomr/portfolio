@@ -10,19 +10,19 @@
     }
   },
   "theme": {
-    "paper": "#EEF3F0",
-    "ink": "#0D1B2A",
-    "orange": "#FF7B1C",
-    "teal": "#0B7F6F",
-    "cobalt": "#2B4C9B",
-    "peach": "#FFD9BD",
-    "ice": "#D3E6E0"
+    "paper": "#FCE8D6",
+    "ink": "#3A1F40",
+    "orange": "#F0957B",
+    "teal": "#1E5B50",
+    "cobalt": "#6B3F73",
+    "peach": "#F7C3AA",
+    "ice": "#F3D3BF"
   },
   "sections": {
-    "about": true,
     "work": true,
+    "about": true,
+    "cta": true,
     "skills": true,
-    "testimonials": false,
     "contact": true
   },
   "person": {
@@ -34,7 +34,8 @@
       "ru": "Графический дизайнер",
       "en": "Graphic designer"
     },
-    "photo": ""
+    "photo": "assets/photo-placeholder.webp",
+    "photoMode": "cutout"
   },
   "hero": {
     "line1": {
@@ -52,6 +53,10 @@
     "cta": {
       "ru": "Смотреть работы",
       "en": "See the work"
+    },
+    "eyebrow": {
+      "ru": "Бренд, печать, digital и моушн",
+      "en": "Brand, print, digital and motion"
     }
   },
   "about": {
@@ -97,21 +102,7 @@
           "en": "Files are ready for the printer and for the placement."
         }
       }
-    ],
-    "statLabels": {
-      "cases": {
-        "ru": "",
-        "en": ""
-      },
-      "directions": {
-        "ru": "направлений работы",
-        "en": "areas of work"
-      },
-      "materials": {
-        "ru": "материалов в галерее",
-        "en": "pieces in the gallery"
-      }
-    }
+    ]
   },
   "work": {
     "title": {
@@ -217,14 +208,11 @@
       "PowerPoint",
       "Figma",
       "Blender"
-    ]
-  },
-  "testimonials": {
-    "title": {
-      "ru": "Отзывы",
-      "en": "Testimonials"
-    },
-    "items": []
+    ],
+    "cta": {
+      "ru": "Смотреть работы",
+      "en": "See the work"
+    }
   },
   "contact": {
     "title": {
@@ -250,6 +238,10 @@
     "thanks": {
       "ru": "Спасибо, что заглянули.",
       "en": "Thanks for stopping by."
+    },
+    "badge": {
+      "ru": "Продуманный дизайн • Точный результат • ",
+      "en": "Thoughtful design • Strategic impact • "
     }
   },
   "ui": {
@@ -332,6 +324,20 @@
     "currentWork": {
       "ru": "Сейчас на экране",
       "en": "Now showing"
+    }
+  },
+  "cta": {
+    "title": {
+      "ru": "Давайте создадим что-то",
+      "en": "Let’s build something"
+    },
+    "script": {
+      "ru": "особенное",
+      "en": "Amazing"
+    },
+    "text": {
+      "ru": "Каждый проект — повод сделать визуальный язык, который запомнится и работает на результат.",
+      "en": "Every project is a chance to create a visual language that is remembered and works for the result."
     }
   }
 }

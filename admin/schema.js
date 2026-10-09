@@ -4,23 +4,23 @@ export const ICONS = [
   ['banner', 'Баннер'], ['motion', 'Видео'], ['ui', 'Интерфейс'], ['stand', 'Стенд'],
 ];
 
-export const DEFAULT_THEME = { paper: '#EEF3F0', ink: '#0D1B2A', orange: '#FF7B1C', teal: '#0B7F6F', cobalt: '#2B4C9B', peach: '#FFD9BD', ice: '#D3E6E0' };
+export const DEFAULT_THEME = { paper: '#FCE8D6', ink: '#3A1F40', orange: '#F0957B', teal: '#1E5B50', cobalt: '#6B3F73', peach: '#F7C3AA', ice: '#F3D3BF' };
 
 export const THEME_LABELS = {
-  paper: 'Фон страницы',
-  ink: 'Основной тёмный (текст, раздел «Обо мне»)',
-  orange: 'Акцентный оранжевый (контакты, акценты)',
-  teal: 'Бирюзовый (раздел «Что я делаю», плашки)',
-  cobalt: 'Синий (фокус, наведение)',
-  peach: 'Персиковый (раздел «Работы»)',
-  ice: 'Светлый бирюзовый (подложки изображений)',
+  paper: 'Фон страницы (кремовый)',
+  ink: 'Основной тёмный: сливовый (текст, нижний блок, кнопки)',
+  orange: 'Акцент: коралловый (арка, «ФОЛИО», блок контактов)',
+  teal: 'Бирюзовый (плашка профессии, блок «Что я делаю»)',
+  cobalt: 'Цвет наведения кнопок и рамки фокуса',
+  peach: 'Персиковый (плитки работ, арка «Давайте создадим»)',
+  ice: 'Фон под изображениями (подложка)',
 };
 
 export const SECTION_LABELS = {
-  work: 'Работы',
   about: 'Обо мне',
+  work: 'Избранные работы',
+  cta: 'Арка «Давайте создадим что-то»',
   skills: 'Что я делаю',
-  testimonials: 'Отзывы (покажутся, только если добавлен хотя бы один)',
   contact: 'Контакты',
 };
 
@@ -31,11 +31,13 @@ export const TEXT_GROUPS = [
     fields: [
       { path: 'person.name', t: 'i18n', label: 'Ваше имя' },
       { path: 'person.role', t: 'i18n', label: 'Специальность (зелёная пилюля)' },
+      { path: 'hero.eyebrow', t: 'i18n', label: 'Короткая строка над заголовком' },
       { path: 'hero.line1', t: 'i18n', label: 'Крупный заголовок, строка 1' },
       { path: 'hero.line2', t: 'i18n', label: 'Крупный заголовок, строка 2 (оранжевая)' },
       { path: 'hero.tagline', t: 'i18n-long', label: 'Рукописный слоган' },
       { path: 'hero.cta', t: 'i18n', label: 'Текст кнопки' },
-      { path: 'person.photo', t: 'photo', label: 'Ваше фото', hint: 'Если загрузить фото, оно заменит смену работ на главном экране.' },
+      { path: 'person.photo', t: 'photo', label: 'Ваше фото', hint: 'Для вырезанной фигуры загрузите PNG или WebP с прозрачным фоном. Сейчас стоит картинка-заглушка.' },
+      { path: 'person.photoMode', t: 'select', label: 'Как показывать фото', options: [['cutout', 'Вырезанная фигура на фоне арки (нужен прозрачный фон)'], ['arch', 'Обычное фото внутри арки']] },
     ],
   },
   {
@@ -49,9 +51,6 @@ export const TEXT_GROUPS = [
         item: [{ k: 'icon', t: 'icon', label: 'Значок' }, { k: 'title', t: 'i18n', label: 'Название' }, { k: 'text', t: 'i18n', label: 'Пояснение' }],
         itemTitle: (it) => it.title?.ru || 'Тезис',
       },
-      { path: 'about.statLabels.cases', t: 'i18n', label: 'Подпись к числу кейсов', hint: 'Числа считаются сами по опубликованным работам.' },
-      { path: 'about.statLabels.directions', t: 'i18n', label: 'Подпись к числу направлений' },
-      { path: 'about.statLabels.materials', t: 'i18n', label: 'Подпись к числу материалов' },
     ],
   },
   {
@@ -72,21 +71,17 @@ export const TEXT_GROUPS = [
         item: [{ k: 'icon', t: 'icon', label: 'Значок' }, { k: 'title', t: 'i18n', label: 'Название' }, { k: 'text', t: 'i18n-long', label: 'Описание' }],
         itemTitle: (it) => it.title?.ru || 'Направление',
       },
+      { path: 'skills.cta', t: 'i18n', label: 'Текст кнопки у каждого направления', hint: 'Кнопка ведёт к работам этой категории.' },
       { path: 'skills.toolsTitle', t: 'i18n', label: 'Подпись к инструментам' },
       { path: 'skills.tools', t: 'strings', label: 'Инструменты' },
     ],
   },
   {
-    id: 'testimonials', title: 'Отзывы',
+    id: 'cta', title: 'Арка «Давайте создадим»',
     fields: [
-      { path: 'testimonials.title', t: 'i18n', label: 'Заголовок раздела' },
-      {
-        path: 'testimonials.items', t: 'list', label: 'Отзывы', addLabel: 'отзыв',
-        create: () => ({ text: { ru: '', en: '' }, author: { ru: '', en: '' } }),
-        item: [{ k: 'text', t: 'i18n-long', label: 'Текст отзыва' }, { k: 'author', t: 'i18n', label: 'Автор (имя, должность)' }],
-        itemTitle: (it) => it.author?.ru || 'Отзыв',
-        hint: 'Добавляйте только настоящие отзывы. Раздел появится на сайте, когда будет хотя бы один.',
-      },
+      { path: 'cta.title', t: 'i18n', label: 'Заголовок' },
+      { path: 'cta.script', t: 'i18n', label: 'Рукописное слово' },
+      { path: 'cta.text', t: 'i18n-long', label: 'Короткий текст' },
     ],
   },
   {
@@ -100,6 +95,7 @@ export const TEXT_GROUPS = [
       { path: 'contact.phone', t: 'text', label: 'Телефон', hint: 'Можно оставить пустым.' },
       { path: 'contact.behance', t: 'text', label: 'Ссылка на Behance или другое портфолио', hint: 'Можно оставить пустым.' },
       { path: 'contact.location', t: 'i18n', label: 'Город' },
+      { path: 'contact.badge', t: 'i18n', label: 'Текст по кругу на печати справа', hint: 'Лучше 30–40 символов. Если оставить пустым, печать скроется.' },
       { path: 'contact.thanks', t: 'i18n', label: 'Подпись в самом низу' },
     ],
   },

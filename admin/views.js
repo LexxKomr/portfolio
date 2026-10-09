@@ -25,7 +25,7 @@ export function worksView() {
       const cover = w.cover ? h('img', { src: S.previewUrl(w.cover), alt: '' }) : h('span', { class: 'noimg' });
       list.append(h('div', { class: `row${w.visible === false ? ' hidden-work' : ''}` },
         cover,
-        h('div', {}, h('strong', {}, w.title.ru || '(без названия)', w.visible === false && h('span', { class: 'pill' }, 'скрыта'), w.hero && h('span', { class: 'pill' }, 'на главной')),
+        h('div', {}, h('strong', {}, w.title.ru || '(без названия)', w.visible === false && h('span', { class: 'pill' }, 'скрыта'), ),
           h('small', {}, `${catTitle(w.category)}, ${w.year || '—'}, материалов: ${w.images.length}`)),
         h('div', { class: 'row-btns' },
           h('button', { class: 'ico', title: 'Выше', disabled: i === 0, onClick: () => move(arr, i, -1) }, '↑'),
@@ -77,10 +77,9 @@ export function workView(slug) {
       const isVid = im.type === 'video';
       const th = isVid ? im.poster : im.thumb;
       const isCover = w.cover === th;
-      const isHero = !!w.hero && w.hero === th;
-      grid.append(h('div', { class: 'media' },
+            grid.append(h('div', { class: 'media' },
         h('div', { class: 'thumb' }, h('img', { src: S.previewUrl(th), alt: '' }), isVid && h('span', { class: 'vid' }, 'видео'),
-          h('span', { class: 'flags' }, isCover && h('span', {}, 'обложка'), isHero && h('span', { class: 'teal' }, 'на главной'))),
+          h('span', { class: 'flags' }, isCover && h('span', {}, 'обложка'))),
         h('div', { class: 'body' },
           (() => { const i1 = h('input', { class: 'inp', placeholder: 'Подпись (RU)', value: im.alt?.ru || '' }); i1.addEventListener('input', () => { im.alt = { ...im.alt, ru: i1.value }; touched(); }); return i1; })(),
           (() => { const i2 = h('input', { class: 'inp', placeholder: 'Caption (EN)', value: im.alt?.en || '' }); i2.addEventListener('input', () => { im.alt = { ...im.alt, en: i2.value }; touched(); }); return i2; })(),
@@ -88,7 +87,6 @@ export function workView(slug) {
             h('button', { class: 'ico', title: 'Влево', disabled: i === 0, onClick: () => { S.moveItem(w.images, i, -1); touched(); drawGrid(); } }, '←'),
             h('button', { class: 'ico', title: 'Вправо', disabled: i === w.images.length - 1, onClick: () => { S.moveItem(w.images, i, 1); touched(); drawGrid(); } }, '→'),
             h('button', { class: `ico${isCover ? ' on' : ''}`, title: 'Сделать обложкой карточки', onClick: () => { S.setCover(w, im); touched(); drawGrid(); } }, '▣'),
-            h('button', { class: `ico${isHero ? ' on' : ''}`, title: isHero ? 'Убрать с главного экрана' : 'Показывать на главном экране', onClick: () => { if (isHero) { w.hero = ''; w.heroW = 0; w.heroH = 0; } else { w.hero = th; w.heroW = im.w; w.heroH = im.h; } touched(); drawGrid(); } }, '◖'),
             h('button', { class: 'ico danger', title: 'Удалить', onClick: async () => { if (await confirmBox('Удалить этот материал из работы? Файл будет удалён при публикации.', { ok: 'Удалить', danger: true })) { S.removeImage(w, i); drawGrid(); } } }, '✕')))));
     });
     if (w.cover && !w.images.some((im) => (im.type === 'video' ? im.poster : im.thumb) === w.cover)) {
@@ -111,7 +109,7 @@ export function workView(slug) {
   drop.addEventListener('dragleave', () => drop.classList.remove('over'));
   drop.addEventListener('drop', (e) => { e.preventDefault(); drop.classList.remove('over'); upload(e.dataTransfer.files); });
   drawGrid();
-  gallery.append(grid, drop, status, h('p', { class: 'hint' }, '▣ — обложка карточки в списке работ. ◖ — показывать этот кадр целиком в подборке на главном экране (рядом с названием).'));
+  gallery.append(grid, drop, status, h('p', { class: 'hint' }, '▣ — обложка карточки в списке работ на главной странице.'));
 
   const danger = h('div', { class: 'card' }, h('h2', {}, 'Удаление'),
     h('p', { class: 'hint' }, 'Работа и все её файлы будут удалены из репозитория при публикации. До публикации можно отменить через раздел «Публикация».'),
@@ -168,6 +166,7 @@ function fieldNode(f) {
     case 'i18n': return i18nField(o, key, f.label, { hint: f.hint });
     case 'i18n-long': return i18nField(o, key, f.label, { long: true, hint: f.hint });
     case 'text': return textField(o, key, f.label, { type: f.type || 'text', hint: f.hint });
+    case 'select': return selectField(o, key, f.label, f.options);
     case 'strings': return stringsField(o, key, f.label);
     case 'photo': return photoField(f);
     case 'list': {

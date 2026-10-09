@@ -69,8 +69,9 @@ export function applyTheme(theme = {}) {
 }
 
 // ---------- иконки (24×24, линейные) ----------
+export const STAR_D = 'M12 0c.7 6.6 4.9 10.8 12 12-7.1 1.2-11.3 5.4-12 12-.7-6.6-4.9-10.8-12-12C7.1 10.8 11.3 6.6 12 0z';
 const I = {
-  star: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.7 6.6 4.9 10.8 12 12-7.1 1.2-11.3 5.4-12 12-.7-6.6-4.9-10.8-12-12C7.100 10.800 11.300 6.600 12 0z"/></svg>',
+  star: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${STAR_D}"/></svg>`,
   globe: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.200 3 14.800 0 18M12 3c-3 3.200-3 14.800 0 18"/></svg>',
   back: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>',
   next: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>',
@@ -81,6 +82,7 @@ const I = {
   pin: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.100 7-11a7 7 0 10-14 0c0 4.900 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>',
   behance: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h6a3 3 0 010 6H3zm0 6h7a3 3 0 010 6H3zM14 9h6M14 15a3 3 0 006 0 3 3 0 00-6 0z"/></svg>',
   // направления
+  sun: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16a6 6 0 0112 0M12 5V3M5.2 9.2L3.8 7.8M18.8 9.2l1.4-1.4M2 16h20M7 20h10"/></svg>',
   system: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.500"/><rect x="14" y="3" width="7" height="7" rx="3.500"/><path d="M3 21l3.500-7L10 21zM14 14h7v7h-7z"/></svg>',
   format: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="12" height="9" rx="1.500"/><rect x="9" y="11" width="12" height="9" rx="1.500"/></svg>',
   print: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4v-7a2 2 0 012-2h12a2 2 0 012 2v7h-3"/><rect x="7" y="14" width="10" height="7" rx="1"/></svg>',

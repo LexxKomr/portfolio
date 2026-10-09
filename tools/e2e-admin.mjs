@@ -85,7 +85,6 @@ try {
   assert.equal(await page.evaluate(() => document.querySelector('.flags span')?.textContent), 'обложка'); log('первая загрузка стала обложкой');
   await (await page.$('.card input[type=checkbox]')).click();
   await fill((await page.$$('.card .pair input'))[0], 'Тестовая работа');
-  await click('.media .ico[title^="Показывать на главном"]');
 
   console.log('тексты и оформление');
   await page.goto(ADMIN + '#/texts/hero'); await page.waitForSelector('.card .pair');
@@ -100,10 +99,10 @@ try {
   await sleep(2500);
   const fr = page.frames().find((f) => f.url().includes('index.html') && f.url().includes('preview'));
   assert.ok(fr, 'iframe предпросмотра не найден');
-  await fr.waitForSelector('.script', { timeout: 8000 });
-  assert.equal(await fr.$eval('.script', (e) => e.textContent), 'Новый слоган из админки.'); log('предпросмотр показывает неопубликованный текст');
+  await fr.waitForSelector('.hero-meta .script', { timeout: 8000 });
+  assert.equal(await fr.$eval('.hero-meta .script', (e) => e.textContent), 'Новый слоган из админки.'); log('предпросмотр показывает неопубликованный текст');
   assert.equal(await fr.evaluate(() => getComputedStyle(document.documentElement).getPropertyValue('--paper').trim()), '#112233'); log('предпросмотр применяет новый цвет');
-  assert.equal(await fr.$$eval('.card', (c) => c.length), 11); log('в предпросмотре появилась новая работа (11 карточек)');
+  assert.equal(await fr.$$eval('.wgrid .card', (c) => c.length), 11); log('в предпросмотре появилась новая работа (11 карточек)');
   await shot('05-preview');
   await click('dialog.preview .btn', 'Закрыть');
 
@@ -121,7 +120,7 @@ try {
   assert.equal(siteJson.theme.paper, '#112233');
   const worksJson = JSON.parse(fs.readFileSync(path.join(SB, 'data/works.json'), 'utf8'));
   const nw = worksJson.works.find((w) => w.title.ru === 'Тестовая работа');
-  assert.ok(nw && nw.visible && nw.images.length === 3 && nw.hero);
+  assert.ok(nw && nw.visible && nw.images.length === 3);
   assert.ok(worksJson.works[0].title.ru.includes('(правка)'));
   for (const im of nw.images) for (const k of ['thumb', 'full', 'video', 'poster']) if (im[k]) assert.ok(fs.existsSync(path.join(SB, im[k])), 'нет файла ' + im[k]);
   assert.ok(worksJson.categories.some((c) => c.title.ru === 'Айдентика'));
@@ -130,8 +129,8 @@ try {
   console.log('опубликованный сайт');
   const pub = await browser.newPage();
   await pub.goto('http://localhost:4174/', { waitUntil: 'networkidle0' });
-  assert.equal(await pub.$$eval('.card', (c) => c.length), 11);
-  assert.equal(await pub.$eval('.script', (e) => e.textContent), 'Новый слоган из админки.');
+  assert.equal(await pub.$$eval('.wgrid .card', (c) => c.length), 11);
+  assert.equal(await pub.$eval('.hero-meta .script', (e) => e.textContent), 'Новый слоган из админки.');
   const broken = await pub.$$eval('img', (is) => is.filter((i) => i.complete && i.naturalWidth === 0).map((i) => i.src));
   assert.deepEqual(broken, []); log('на сайте 11 работ, новый текст, все картинки грузятся');
   await pub.goto(`http://localhost:4174/work.html?slug=${nw.slug}`, { waitUntil: 'networkidle0' });

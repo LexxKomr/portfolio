@@ -9,12 +9,11 @@ async function encode(canvas, q) {
   return { blob, ext: blob.type === 'image/webp' ? 'webp' : 'jpg' };
 }
 
-function draw(bitmap, w, h) {
+function draw(bitmap, w, h, { alpha = false } = {}) {
   const c = document.createElement('canvas');
   c.width = w; c.height = h;
   const ctx = c.getContext('2d');
-  ctx.fillStyle = '#fff';
-  ctx.fillRect(0, 0, w, h);
+  if (!alpha) { ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, w, h); }
   ctx.imageSmoothingQuality = 'high';
   ctx.drawImage(bitmap, 0, 0, w, h);
   return c;
@@ -37,11 +36,15 @@ export async function processImage(file) {
   return { full, thumb, w: fw, h: fh };
 }
 
-/** Одиночное фото (портрет в hero): ограничиваем 1200px по большей стороне. */
+/** Фото в первом экране: сохраняем прозрачность (для вырезанной фигуры), до 1600px по большей стороне. */
 export async function processPhoto(file) {
   const bmp = await createImageBitmap(file, { imageOrientation: 'from-image' });
-  const [w, h] = fit(bmp.width, bmp.height, 1200, 1500);
-  const out = await encode(draw(bmp, w, h), 0.84);
+  const [w, h] = fit(bmp.width, bmp.height, 1600, 1600);
+  const c = draw(bmp, w, h, { alpha: true });
+  let blob = await toBlob(c, 'image/webp', 0.88);
+  let out;
+  if (blob && blob.type === 'image/webp') out = { blob, ext: 'webp' };
+  else out = { blob: await toBlob(c, 'image/png'), ext: 'png' }; // браузер без webp: PNG тоже хранит прозрачность
   bmp.close?.();
   return out;
 }

@@ -194,7 +194,12 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .pillar { padding: 0 6px; }
   .panel-work { grid-column: 1; grid-row: auto; order: 2; border-radius: 40px 40px 0 0; }
   .cta { grid-column: 1; grid-row: auto; order: 3; padding-top: 30px; }
-  .cta-arch { min-height: 380px; max-width: 420px; justify-self: center; width: 100%; }
+  .cta-arch { min-height: 0; max-width: 420px; justify-self: center; width: 100%; text-align: center; justify-items: center; padding: 108px 26px 190px; }
+  .cta-arch p { max-width: 30ch; }
+  .cta-arch h3 { text-wrap: balance; letter-spacing: .08em; }
+  .cta-arch::before { left: -10%; bottom: -34px; width: 52%; }
+  .cta-arch::after { right: -8%; bottom: -26px; width: 30%; }
+  .cta-arch .spark { left: 31%; bottom: 40px; }
   .panel-skills { grid-column: 1; grid-row: auto; order: 4; border-radius: 40px 40px 0 0; margin-top: 30px; }
 }
 

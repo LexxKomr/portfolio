@@ -390,8 +390,7 @@
         "en": "Animation, pacing, file-size optimisation"
       },
       "tags": [
-        "After Effects",
-        "GIF / MP4"
+        "After Effects"
       ],
       "title": {
         "ru": "Анимированные баннеры",
@@ -424,28 +423,6 @@
           "alt": {
             "ru": "Анимация CAE Day, версия 2",
             "en": "CAE Day animation, version 2"
-          }
-        },
-        {
-          "type": "video",
-          "video": "assets/works/motion-banners/02.mp4",
-          "poster": "assets/works/motion-banners/02-poster.webp",
-          "w": 728,
-          "h": 90,
-          "alt": {
-            "ru": "Анимация CAE Day, версия 3",
-            "en": "CAE Day animation, version 3"
-          }
-        },
-        {
-          "type": "video",
-          "video": "assets/works/motion-banners/03.mp4",
-          "poster": "assets/works/motion-banners/03-poster.webp",
-          "w": 728,
-          "h": 90,
-          "alt": {
-            "ru": "Анимация CAE Day, версия 1",
-            "en": "CAE Day animation, version 1"
           }
         },
         {

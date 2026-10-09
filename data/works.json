@@ -92,12 +92,12 @@
         "en": "Visual system for an engineering-analysis industry conference"
       },
       "task": {
-        "ru": "Собрать единый узнаваемый образ конференции для баннеров на сайтах-партнёрах, рассылок, рекламных модулей и всплывающих окон, при этом сохранить бренды двух компаний.",
-        "en": "Build one recognisable look for the conference across partner-site banners, newsletters, ad modules and pop-ups while keeping both company brands intact."
+        "ru": "Собрать единый узнаваемый образ конференции для баннеров на сайтах-партнёрах, рассылок, рекламных модулей и всплывающих окон, при этом сохранить бренды двух компаний",
+        "en": "Build one recognisable look for the conference across partner-site banners, newsletters, ad modules and pop-ups while keeping both company brands intact"
       },
       "solution": {
-        "ru": "Диагональ делит композицию на тёплую и холодную половины: оранжевый бренда Борлас встречается с бирюзово-синим Fidesys. В центре — расчётная модель турбины, она же визуально объясняет тему события. Тот же приём масштабируется от баннера 840×200 до рекламного модуля на полосу.",
-        "en": "A diagonal splits the layout into a warm and a cool half: the Borlas orange meets the Fidesys teal-blue. A turbine simulation model sits at the centre and explains the topic at a glance. The same device scales from an 840×200 banner to a full-page ad module."
+        "ru": "Диагональ делит композицию на тёплую и холодную половины: оранжевый бренда Борлас встречается с бирюзово-синим Fidesys. В центре — расчётная модель турбины, она же визуально объясняет тему события. Тот же приём масштабируется от баннера 840×200 до рекламного модуля на полосу",
+        "en": "A diagonal splits the layout into a warm and a cool half: the Borlas orange meets the Fidesys teal-blue. A turbine simulation model sits at the centre and explains the topic at a glance. The same device scales from an 840×200 banner to a full-page ad module"
       },
       "cover": "assets/works/cae-day/01-thumb.webp",
       "hero": "assets/works/cae-day/hero.webp",
@@ -172,6 +172,7 @@
         "en": "UX structure, UI design for 20+ screens"
       },
       "tags": [
+        "Figma",
         "UI/UX",
         "Dashboard",
         "Data viz"
@@ -185,12 +186,12 @@
         "en": "Four subject areas, shared filters and three levels of detail on every screen."
       },
       "task": {
-        "ru": "Дать аналитикам один вход в разрозненные данные: итоги ВЭД, мировую торговлю, экспортный потенциал и торговлю услугами. Экран должен помогать сравнивать, а не просто показывать цифры.",
-        "en": "Give analysts a single entry point into scattered data: foreign-trade results, world trade, export potential and services trade. Each screen should help compare, not just display numbers."
+        "ru": "Дать аналитикам один вход в разрозненные данные: итоги ВЭД, мировую торговлю, экспортный потенциал и торговлю услугами. Экран должен помогать сравнивать, а не просто показывать цифры",
+        "en": "Give analysts a single entry point into scattered data: foreign-trade results, world trade, export potential and services trade. Each screen should help compare, not just display numbers"
       },
       "solution": {
-        "ru": "Каждый раздел устроен одинаково: «Свод», «Детализация», «Исходные данные». Фильтры живут сверху и сохраняются как шаблоны, показатели собраны в крупные плитки, карта и графики отвечают на один вопрос за раз. Цвет кодирует регион, размер — объём.",
-        "en": "Every section works the same way: Summary, Detail, Source data. Filters sit on top and can be saved as templates, key figures are large tiles, and the map and charts each answer one question. Colour encodes region, size encodes volume."
+        "ru": "Каждый раздел устроен одинаково: «Свод», «Детализация», «Исходные данные». Фильтры живут сверху и сохраняются как шаблоны, показатели собраны в крупные плитки, карта и графики отвечают на один вопрос за раз. Цвет кодирует регион, размер — объём",
+        "en": "Every section works the same way: Summary, Detail, Source data. Filters sit on top and can be saved as templates, key figures are large tiles, and the map and charts each answer one question. Colour encodes region, size encodes volume"
       },
       "cover": "assets/works/bi-system/01-thumb.webp",
       "hero": "",
@@ -851,12 +852,12 @@
         "en": "Dark artwork with a drone and a node network turns hardware into a project showcase."
       },
       "task": {
-        "ru": "Оформить серверный шкаф проекта беспилотных систем региона так, чтобы он выглядел как экспонат, а не как стойка в серверной.",
-        "en": "Brand a server cabinet for a regional unmanned-systems project so it looks like an exhibit and not just a rack."
+        "ru": "Оформить серверный шкаф в стиле проекта",
+        "en": "Brand a server cabinet for a regional unmanned-systems project so it looks like an exhibit and not just a rack"
       },
       "solution": {
-        "ru": "Линейный дрон на графитовом фоне и тонкая сеть связей говорят о теме без лишних слов. Герб и логотипы собраны по вертикальной оси, а оранжевая линия отделяет партнёров от основной композиции.",
-        "en": "A line-art drone on graphite and a fine network of links speak to the theme in few words. The coat of arms and logos run along a vertical axis, and an orange line separates the partners from the main composition."
+        "ru": "Линейный дрон на графитовом фоне и тонкая сеть связей говорят о теме без лишних слов. Герб и логотипы собраны по вертикальной оси, а оранжевая линия отделяет партнёров от основной композиции",
+        "en": "A line-art drone on graphite and a fine network of links speak to the theme in few words. The coat of arms and logos run along a vertical axis, and an orange line separates the partners from the main composition"
       },
       "cover": "assets/works/server-cabinet/01-thumb.webp",
       "hero": "assets/works/server-cabinet/01-thumb.webp",

@@ -88,16 +88,16 @@
         "en": "CAE Day 2025"
       },
       "summary": {
-        "ru": "Визуальная система отраслевой конференции по инженерному анализу.",
-        "en": "Visual system for an engineering-analysis industry conference."
+        "ru": "Визуальная система отраслевой конференции по инженерному анализу",
+        "en": "Visual system for an engineering-analysis industry conference"
       },
       "task": {
-        "ru": "Собрать единый узнаваемый образ конференции для баннеров на сайтах-партнёрах, рассылок, рекламных модулей и всплывающих окон, при этом сохранить бренды двух компаний.",
-        "en": "Build one recognisable look for the conference across partner-site banners, newsletters, ad modules and pop-ups while keeping both company brands intact."
+        "ru": "Собрать единый узнаваемый образ конференции для баннеров на сайтах-партнёрах, рассылок, рекламных модулей и всплывающих окон, при этом сохранить бренды двух компаний",
+        "en": "Build one recognisable look for the conference across partner-site banners, newsletters, ad modules and pop-ups while keeping both company brands intact"
       },
       "solution": {
-        "ru": "Диагональ делит композицию на тёплую и холодную половины: оранжевый бренда Борлас встречается с бирюзово-синим Fidesys. В центре — расчётная модель турбины, она же визуально объясняет тему события. Тот же приём масштабируется от баннера 840×200 до рекламного модуля на полосу.",
-        "en": "A diagonal splits the layout into a warm and a cool half: the Borlas orange meets the Fidesys teal-blue. A turbine simulation model sits at the centre and explains the topic at a glance. The same device scales from an 840×200 banner to a full-page ad module."
+        "ru": "Диагональ делит композицию на тёплую и холодную половины: оранжевый бренда Борлас встречается с бирюзово-синим Fidesys. В центре — расчётная модель турбины, она же визуально объясняет тему события. Тот же приём масштабируется от баннера 840×200 до рекламного модуля на полосу",
+        "en": "A diagonal splits the layout into a warm and a cool half: the Borlas orange meets the Fidesys teal-blue. A turbine simulation model sits at the centre and explains the topic at a glance. The same device scales from an 840×200 banner to a full-page ad module"
       },
       "cover": "assets/works/cae-day/01-thumb.webp",
       "hero": "assets/works/cae-day/hero.webp",
@@ -172,6 +172,7 @@
         "en": "UX structure, UI design for 20+ screens"
       },
       "tags": [
+        "Figma",
         "UI/UX",
         "Dashboard",
         "Data viz"
@@ -185,12 +186,12 @@
         "en": "Four subject areas, shared filters and three levels of detail on every screen."
       },
       "task": {
-        "ru": "Дать аналитикам один вход в разрозненные данные: итоги ВЭД, мировую торговлю, экспортный потенциал и торговлю услугами. Экран должен помогать сравнивать, а не просто показывать цифры.",
-        "en": "Give analysts a single entry point into scattered data: foreign-trade results, world trade, export potential and services trade. Each screen should help compare, not just display numbers."
+        "ru": "Дать аналитикам один вход в разрозненные данные: итоги ВЭД, мировую торговлю, экспортный потенциал и торговлю услугами. Экран должен помогать сравнивать, а не просто показывать цифры",
+        "en": "Give analysts a single entry point into scattered data: foreign-trade results, world trade, export potential and services trade. Each screen should help compare, not just display numbers"
       },
       "solution": {
-        "ru": "Каждый раздел устроен одинаково: «Свод», «Детализация», «Исходные данные». Фильтры живут сверху и сохраняются как шаблоны, показатели собраны в крупные плитки, карта и графики отвечают на один вопрос за раз. Цвет кодирует регион, размер — объём.",
-        "en": "Every section works the same way: Summary, Detail, Source data. Filters sit on top and can be saved as templates, key figures are large tiles, and the map and charts each answer one question. Colour encodes region, size encodes volume."
+        "ru": "Каждый раздел устроен одинаково: «Свод», «Детализация», «Исходные данные». Фильтры живут сверху и сохраняются как шаблоны, показатели собраны в крупные плитки, карта и графики отвечают на один вопрос за раз. Цвет кодирует регион, размер — объём",
+        "en": "Every section works the same way: Summary, Detail, Source data. Filters sit on top and can be saved as templates, key figures are large tiles, and the map and charts each answer one question. Colour encodes region, size encodes volume"
       },
       "cover": "assets/works/bi-system/01-thumb.webp",
       "hero": "",
@@ -299,7 +300,7 @@
       },
       "tags": [
         "Photoshop",
-        "Adaptive layout"
+        "Illustrator"
       ],
       "title": {
         "ru": "Акция «Определи свой уровень прочности»",
@@ -310,12 +311,12 @@
         "en": "One layout, three formats: landscape, portrait and a wide header."
       },
       "task": {
-        "ru": "Запустить акцию на экранах, в соцсетях и на сайте партнёра. Форматы разные, а акцию должны узнавать везде.",
-        "en": "Launch a promo on screens, social media and a partner site. Formats differ, but the promo has to be recognised everywhere."
+        "ru": "Запустить акцию на экранах, в соцсетях и на сайте партнёра. Форматы разные, а акцию должны узнавать везде",
+        "en": "Launch a promo on screens, social media and a partner site. Formats differ, but the promo has to be recognised everywhere"
       },
       "solution": {
-        "ru": "Крупная оранжевая плашка с заголовком держит композицию, серая — срок проведения. Фоновые полосы дают динамику и перестраиваются под каждый формат без потери иерархии.",
-        "en": "A large orange panel carries the headline and a grey one holds the dates. Background stripes add movement and re-flow for each format without losing hierarchy."
+        "ru": "Крупная оранжевая плашка с заголовком держит композицию, серая — срок проведения. Фоновые полосы дают динамику и перестраиваются под каждый формат без потери иерархии",
+        "en": "A large orange panel carries the headline and a grey one holds the dates. Background stripes add movement and re-flow for each format without losing hierarchy"
       },
       "cover": "assets/works/fidesys-promo/01-thumb.webp",
       "hero": "assets/works/fidesys-promo/02-thumb.webp",
@@ -390,8 +391,7 @@
         "en": "Animation, pacing, file-size optimisation"
       },
       "tags": [
-        "After Effects",
-        "GIF / MP4"
+        "After Effects"
       ],
       "title": {
         "ru": "Анимированные баннеры",
@@ -428,28 +428,6 @@
         },
         {
           "type": "video",
-          "video": "assets/works/motion-banners/02.mp4",
-          "poster": "assets/works/motion-banners/02-poster.webp",
-          "w": 728,
-          "h": 90,
-          "alt": {
-            "ru": "Анимация CAE Day, версия 3",
-            "en": "CAE Day animation, version 3"
-          }
-        },
-        {
-          "type": "video",
-          "video": "assets/works/motion-banners/03.mp4",
-          "poster": "assets/works/motion-banners/03-poster.webp",
-          "w": 728,
-          "h": 90,
-          "alt": {
-            "ru": "Анимация CAE Day, версия 1",
-            "en": "CAE Day animation, version 1"
-          }
-        },
-        {
-          "type": "video",
           "video": "assets/works/motion-banners/04.mp4",
           "poster": "assets/works/motion-banners/04-poster.webp",
           "w": 1240,
@@ -482,24 +460,23 @@
         "en": "Infographic, ad module, one-pager"
       },
       "tags": [
-        "Illustrator",
-        "Infographic"
+        "Illustrator"
       ],
       "title": {
         "ru": "Переход на T-FLEX PLM",
         "en": "Migration to T-FLEX PLM"
       },
       "summary": {
-        "ru": "Сложную тему миграции PLM-систем нужно было показать на одной полосе.",
-        "en": "A complex PLM-migration topic had to fit on one page."
+        "ru": "Сложную тему миграции PLM-систем нужно было показать на одной полосе",
+        "en": "A complex PLM-migration topic had to fit on one page"
       },
       "task": {
-        "ru": "Объяснить за несколько секунд, от чего уходят, куда идут и что получают. Модуль идёт в отраслевое издание, а one-pager — клиентам.",
-        "en": "Explain in seconds what is being left behind, where to and what is gained. The module runs in an industry publication, the one-pager goes to clients."
+        "ru": "Объяснить за несколько секунд, от чего уходят, куда идут и что получают. Модуль идёт в отраслевое издание, а one-pager — клиентам",
+        "en": "Explain in seconds what is being left behind, where to and what is gained. The module runs in an industry publication, the one-pager goes to clients"
       },
       "solution": {
-        "ru": "Композиция читается слева направо: проблемы старой системы, стрелки перехода, выгоды новой. Иконки одного стиля и цвета бренда собирают тезисы в узнаваемые группы.",
-        "en": "The layout reads left to right: problems of the old system, transition arrows, benefits of the new one. Icons in a single style and brand colour group the points."
+        "ru": "Композиция читается слева направо: проблемы старой системы, стрелки перехода, выгоды новой. Иконки одного стиля и цвета бренда собирают тезисы в узнаваемые группы",
+        "en": "The layout reads left to right: problems of the old system, transition arrows, benefits of the new one. Icons in a single style and brand colour group the points"
       },
       "cover": "assets/works/tflex-migration/01-thumb.webp",
       "hero": "",
@@ -572,16 +549,16 @@
         "en": "Leaflets and one-pagers"
       },
       "summary": {
-        "ru": "Серия материалов для выставок и продаж: от услуг техподдержки до промышленной автоматизации.",
-        "en": "A series for trade shows and sales: from technical support to industrial automation."
+        "ru": "Серия материалов для выставок и продаж: от услуг техподдержки до промышленной автоматизации",
+        "en": "A series for trade shows and sales: from technical support to industrial automation"
       },
       "task": {
-        "ru": "Упаковать плотный технический контент в листовки, которые читают на стенде за минуту.",
-        "en": "Pack dense technical content into leaflets that people can read at a stand within a minute."
+        "ru": "Упаковать плотный технический контент в листовки, которые читают на стенде за минуту",
+        "en": "Pack dense technical content into leaflets that people can read at a stand within a minute"
       },
       "solution": {
-        "ru": "Крупные заголовки, блоки с цифрами и цветные плашки задают порядок чтения. Лучше всего получилась листовка выставки ДЦС: цвет делит смысловые блоки, цифры вынесены на первый план.",
-        "en": "Large headings, number blocks and colour panels set the reading order. The strongest is the DCS exhibition leaflet: colour separates the meaning blocks and the numbers come first."
+        "ru": "Крупные заголовки, блоки с цифрами и цветные плашки задают порядок чтения",
+        "en": "Large headings, number blocks and colour panels set the reading order"
       },
       "cover": "assets/works/leaflets/01-thumb.webp",
       "hero": "",
@@ -668,23 +645,23 @@
       },
       "tags": [
         "Photoshop",
-        "Illustration"
+        "Illustrator"
       ],
       "title": {
         "ru": "Праздничные открытки",
         "en": "Holiday greeting cards"
       },
       "summary": {
-        "ru": "Корпоративные поздравления, которые хочется переслать: у каждой открытки своя тема и своё настроение.",
-        "en": "Corporate greetings worth forwarding: every card has its own subject and mood."
+        "ru": "Корпоративные поздравления, которые хочется переслать: у каждой открытки своя тема и своё настроение",
+        "en": "Corporate greetings worth forwarding: every card has its own subject and mood"
       },
       "task": {
-        "ru": "Поздравлять сотрудников, партнёров и клиентов, не повторяясь и оставаясь в рамках фирменного стиля.",
-        "en": "Greet staff, partners and clients without repeating yourself and while staying within the brand."
+        "ru": "Поздравлять сотрудников, партнёров и клиентов, не повторяясь и оставаясь в рамках фирменного стиля",
+        "en": "Greet staff, partners and clients without repeating yourself and while staying within the brand"
       },
       "solution": {
-        "ru": "Для каждой даты — своя среда: зимний городок на катке, ночной офис в лесу, письма и газеты военных лет, химическая лаборатория. Бренд присутствует через цвет и логотип, а не через шаблон.",
-        "en": "Each date gets its own world: a winter town with a rink, an office glowing in a night forest, wartime letters and newspapers, a chemistry lab. The brand is carried by colour and logo, not by a template."
+        "ru": "Для каждой даты — своя среда: зимний городок на катке, ночной офис в лесу, письма и газеты военных лет, химическая лаборатория. Бренд присутствует через цвет и логотип, а не через шаблон",
+        "en": "Each date gets its own world: a winter town with a rink, an office glowing in a night forest, wartime letters and newspapers, a chemistry lab. The brand is carried by colour and logo, not by a template"
       },
       "cover": "assets/works/greetings/01-thumb.webp",
       "hero": "assets/works/greetings/01-thumb.webp",
@@ -778,16 +755,16 @@
         "en": "Borlas Edit exhibition stand and packaging"
       },
       "summary": {
-        "ru": "Стенд, лифлет с двумя фальцами и фирменная упаковка в одном стиле.",
-        "en": "A stand, a double-fold leaflet and branded packaging in one style."
+        "ru": "Стенд, лифлет с двумя фальцами и фирменная упаковка в одном стиле",
+        "en": "A stand, a double-fold leaflet and branded packaging in one style"
       },
       "task": {
-        "ru": "Показать компетенции центра цифровой трансформации, партнёрские статусы и проекты в формате, который читается с расстояния и вблизи.",
-        "en": "Present the digital-transformation centre’s expertise, partner statuses and projects in a format that reads from afar and up close."
+        "ru": "Показать компетенции центра цифровой трансформации, партнёрские статусы и проекты в формате, который читается с расстояния и вблизи",
+        "en": "Present the digital-transformation centre’s expertise, partner statuses and projects in a format that reads from afar and up close"
       },
       "solution": {
-        "ru": "Три смысловые зоны стенда: компетенции, ключевые цифры и контакты со статусами партнёра. Тёмно-синий фон усиливает оранжевые акценты, иконки и изометрия объясняют направления без текста. Тот же язык переходит на лифлет и пакет.",
-        "en": "The stand has three zones: expertise, key figures, and contacts with partner statuses. A deep-blue ground lifts the orange accents, while icons and isometric drawings explain directions without text. The same language carries over to the leaflet and the bag."
+        "ru": "Три смысловые зоны стенда: компетенции, ключевые цифры и контакты со статусами партнёра. Тёмно-синий фон усиливает оранжевые акценты, иконки и изометрия объясняют направления без текста. Тот же язык переходит на лифлет и пакет",
+        "en": "The stand has three zones: expertise, key figures, and contacts with partner statuses. A deep-blue ground lifts the orange accents, while icons and isometric drawings explain directions without text. The same language carries over to the leaflet and the bag"
       },
       "cover": "assets/works/expo-stand/01-thumb.webp",
       "hero": "",
@@ -874,12 +851,12 @@
         "en": "Dark artwork with a drone and a node network turns hardware into a project showcase."
       },
       "task": {
-        "ru": "Оформить серверный шкаф проекта беспилотных систем региона так, чтобы он выглядел как экспонат, а не как стойка в серверной.",
-        "en": "Brand a server cabinet for a regional unmanned-systems project so it looks like an exhibit and not just a rack."
+        "ru": "Оформить серверный шкаф в стиле проекта",
+        "en": "Brand a server cabinet for a regional unmanned-systems project so it looks like an exhibit and not just a rack"
       },
       "solution": {
-        "ru": "Линейный дрон на графитовом фоне и тонкая сеть связей говорят о теме без лишних слов. Герб и логотипы собраны по вертикальной оси, а оранжевая линия отделяет партнёров от основной композиции.",
-        "en": "A line-art drone on graphite and a fine network of links speak to the theme in few words. The coat of arms and logos run along a vertical axis, and an orange line separates the partners from the main composition."
+        "ru": "Линейный дрон на графитовом фоне и тонкая сеть связей говорят о теме без лишних слов. Герб и логотипы собраны по вертикальной оси, а оранжевая линия отделяет партнёров от основной композиции",
+        "en": "A line-art drone on graphite and a fine network of links speak to the theme in few words. The coat of arms and logos run along a vertical axis, and an orange line separates the partners from the main composition"
       },
       "cover": "assets/works/server-cabinet/01-thumb.webp",
       "hero": "assets/works/server-cabinet/01-thumb.webp",
@@ -951,16 +928,16 @@
         "en": "Business cards and certificate"
       },
       "summary": {
-        "ru": "Небольшие носители бренда, из которых складывается впечатление о компании.",
-        "en": "Small brand carriers that shape the impression of a company."
+        "ru": "Небольшие носители бренда, из которых складывается впечатление о компании",
+        "en": "Small brand carriers that shape the impression of a company"
       },
       "task": {
-        "ru": "Сделать визитки для компании и совместного проекта с партнёром, а также сертификат об аттестации инженеров с подписями двух сторон.",
-        "en": "Create business cards for the company and a joint partner project, plus a certificate of engineer attestation signed by both sides."
+        "ru": "Сделать визитки для компании и совместного проекта с партнёром, а также сертификат об аттестации инженеров с подписями двух сторон",
+        "en": "Create business cards for the company and a joint partner project, plus a certificate of engineer attestation signed by both sides"
       },
       "solution": {
-        "ru": "Визитки: спокойный светлый вариант со светящимися волнами и тёмная версия с крупным слоганом. Сертификат: орнаментальная рамка в цветах бренда и крупная гарнитура с засечками для имени получателя.",
-        "en": "Cards: a calm light version with glowing waves and a dark one with a large slogan. Certificate: an ornamental frame in brand colours and a large serif for the recipient’s name."
+        "ru": "Визитки: спокойный светлый вариант со светящимися волнами и тёмная версия с крупным слоганом. Сертификат: орнаментальная рамка в цветах бренда и крупная гарнитура с засечками для имени получателя",
+        "en": "Cards: a calm light version with glowing waves and a dark one with a large slogan. Certificate: an ornamental frame in brand colours and a large serif for the recipient’s name"
       },
       "cover": "assets/works/cards-certificates/01-thumb.webp",
       "hero": "",

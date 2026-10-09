@@ -323,8 +323,8 @@
       "en": "Next"
     },
     "notFound": {
-      "ru": "Такого кейса нет.",
-      "en": "That case study doesn’t exist."
+      "ru": "Такого кейса нет",
+      "en": "That case study doesn’t exist"
     },
     "loadError": {
       "ru": "Не удалось загрузить данные. Обновите страницу.",

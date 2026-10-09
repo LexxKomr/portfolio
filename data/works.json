@@ -63,7 +63,7 @@
       "slug": "cae-day",
       "category": "brand",
       "year": "2025",
-      "order": 1,
+      "order": 5,
       "visible": true,
       "featured": true,
       "client": {
@@ -157,7 +157,7 @@
       "slug": "bi-system",
       "category": "uiux",
       "year": "2026",
-      "order": 2,
+      "order": 1,
       "visible": true,
       "featured": true,
       "client": {
@@ -284,7 +284,7 @@
       "slug": "fidesys-promo",
       "category": "digital",
       "year": "2026",
-      "order": 3,
+      "order": 10,
       "visible": true,
       "featured": true,
       "client": {
@@ -377,7 +377,7 @@
       "slug": "motion-banners",
       "category": "motion",
       "year": "2025",
-      "order": 4,
+      "order": 6,
       "visible": true,
       "featured": true,
       "client": {
@@ -446,7 +446,7 @@
       "slug": "tflex-migration",
       "category": "digital",
       "year": "2026",
-      "order": 5,
+      "order": 3,
       "visible": true,
       "featured": false,
       "client": {
@@ -526,7 +526,7 @@
       "slug": "leaflets",
       "category": "print",
       "year": "2025–2026",
-      "order": 6,
+      "order": 4,
       "visible": true,
       "featured": false,
       "client": {
@@ -630,7 +630,7 @@
       "slug": "greetings",
       "category": "greetings",
       "year": "2025–2026",
-      "order": 7,
+      "order": 8,
       "visible": true,
       "featured": true,
       "client": {
@@ -734,7 +734,7 @@
       "slug": "expo-stand",
       "category": "expo",
       "year": "2025",
-      "order": 8,
+      "order": 2,
       "visible": true,
       "featured": false,
       "client": {
@@ -908,7 +908,7 @@
       "slug": "cards-certificates",
       "category": "brand",
       "year": "2025–2026",
-      "order": 10,
+      "order": 7,
       "visible": true,
       "featured": false,
       "client": {

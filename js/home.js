@@ -63,31 +63,72 @@ function hero(site, list) {
         ${site.sections.work ? `<a class="btn" href="#work">${esc(t(h.cta))}</a>` : ''}
       </div>
     </div>
-    <div class="hero-art">
+    <div class="hero-art" role="group" aria-roledescription="carousel" aria-label="${esc(t(site.ui.currentWork))}">
       <span class="disc"></span><span class="quarter"></span><span class="ring"></span>
-      <a class="arch" id="arch" href="${first ? 'work.html?slug=' + encodeURIComponent(first.slug) : '#work'}" aria-live="off">
-        ${site.person.photo ? `<img class="slide is-active" src="${esc(url(site.person.photo))}" alt="" style="--pos:50% 20%">` : slides.map((w, i) => `<img class="slide${i === 0 ? ' is-active' : ''}" src="${esc(url(w.hero))}" alt="" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} style="--pos:${esc(w.heroPos || '50% 30%')}">`).join('')}
-        ${first && !site.person.photo ? `<span class="arch-cap"><small>${esc(t(site.ui.currentWork))}</small><strong id="arch-title">${esc(t(first.title))}</strong></span>` : ''}
-      </a>
-      <span class="name-pill">${icon('star')}${esc(t(site.person.name))}</span>
+      <div class="deck" id="deck">${deck(site, slides)}</div>
+      <div class="deck-bar">
+        ${slides.length && !site.person.photo ? `<div class="deck-cap">
+          <small>${esc(t(site.ui.currentWork))}</small>
+          <a id="deck-link" href="work.html?slug=${encodeURIComponent(first.slug)}">${esc(t(first.title))}</a>
+          ${slides.length > 1 ? `<div class="dots">${slides.map((w, i) => `<button type="button" data-i="${i}" aria-label="${esc(t(w.title))}" aria-current="${i === 0}"></button>`).join('')}</div>` : ''}
+        </div>` : '<span></span>'}
+        <span class="name-pill">${icon('star')}${esc(t(site.person.name))}</span>
+      </div>
     </div>
   </section>`;
 }
 
+// Работы в колоде показываются целиком: пропорции рамки берутся из самой работы.
+function deck(site, slides) {
+  if (site.person.photo) {
+    return `<span class="deal is-active"><span class="frame photo"><span class="mat"><img src="${esc(url(site.person.photo))}" alt="${esc(t(site.person.name))}" fetchpriority="high"></span></span></span>`;
+  }
+  return slides.map((w, i) => {
+    const ar = (w.heroW && w.heroH ? w.heroW / w.heroH : w.coverW && w.coverH ? w.coverW / w.coverH : 0.8);
+    const ratio = Math.min(2.2, Math.max(0.45, ar)).toFixed(3);
+    return `<a class="deal${i === 0 ? ' is-active' : ''}" href="work.html?slug=${encodeURIComponent(w.slug)}" style="--ar:${ratio}" ${i ? 'tabindex="-1" aria-hidden="true"' : ''} aria-label="${esc(t(w.title))}">
+      <span class="frame"><span class="mat"><img src="${esc(url(w.hero))}" alt="" ${i ? '' : 'fetchpriority="high"'}></span></span>
+    </a>`;
+  }).join('');
+}
+
 function startSlides(site, list) {
   const slides = list.filter((w) => w.hero);
-  const imgs = [...document.querySelectorAll('#arch .slide')];
-  if (site.person.photo || imgs.length < 2 || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const items = [...document.querySelectorAll('#deck .deal')];
+  if (site.person.photo || items.length < 2) return;
+  items.forEach((it) => it.querySelector('img')?.decode?.().catch(() => {})); // готовим кадры заранее, чтобы смена была без мигания
+  const dots = [...document.querySelectorAll('.dots button')];
+  const link = document.getElementById('deck-link');
   let i = 0;
-  const arch = document.getElementById('arch');
-  slideTimer = setInterval(() => {
-    imgs[i].classList.remove('is-active');
-    i = (i + 1) % imgs.length;
-    imgs[i].classList.add('is-active');
-    arch.href = 'work.html?slug=' + encodeURIComponent(slides[i].slug);
-    const tt = document.getElementById('arch-title');
-    if (tt) tt.textContent = t(slides[i].title);
-  }, 4200);
+  const go = (n) => {
+    if (n === i) return;
+    const old = items[i];
+    old.classList.remove('is-active');
+    old.classList.add('is-out');
+    old.tabIndex = -1; old.setAttribute('aria-hidden', 'true');
+    setTimeout(() => old.classList.remove('is-out'), 1000);
+    i = n;
+    items[i].classList.remove('is-out');
+    items[i].classList.add('is-active');
+    items[i].removeAttribute('tabindex'); items[i].removeAttribute('aria-hidden');
+    dots.forEach((d, k) => d.setAttribute('aria-current', String(k === i)));
+    link.href = 'work.html?slug=' + encodeURIComponent(slides[i].slug);
+    link.textContent = t(slides[i].title);
+  };
+  dots.forEach((d) => d.addEventListener('click', () => { go(+d.dataset.i); restart(); }));
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let paused = false;
+  const restart = () => {
+    clearInterval(slideTimer);
+    if (reduce) return;
+    slideTimer = setInterval(() => { if (!paused && !document.hidden) go((i + 1) % items.length); }, 4800);
+  };
+  const art = document.querySelector('.hero-art');
+  art.addEventListener('pointerenter', () => { paused = true; });
+  art.addEventListener('pointerleave', () => { paused = false; });
+  art.addEventListener('focusin', () => { paused = true; });
+  art.addEventListener('focusout', () => { paused = false; });
+  restart();
 }
 
 /* ---------- работы ---------- */

@@ -25,7 +25,7 @@ export function worksView() {
       const cover = w.cover ? h('img', { src: S.previewUrl(w.cover), alt: '' }) : h('span', { class: 'noimg' });
       list.append(h('div', { class: `row${w.visible === false ? ' hidden-work' : ''}` },
         cover,
-        h('div', {}, h('strong', {}, w.title.ru || '(без названия)', w.visible === false && h('span', { class: 'pill' }, 'скрыта'), w.hero && h('span', { class: 'pill' }, 'в арке')),
+        h('div', {}, h('strong', {}, w.title.ru || '(без названия)', w.visible === false && h('span', { class: 'pill' }, 'скрыта'), w.hero && h('span', { class: 'pill' }, 'на главной')),
           h('small', {}, `${catTitle(w.category)}, ${w.year || '—'}, материалов: ${w.images.length}`)),
         h('div', { class: 'row-btns' },
           h('button', { class: 'ico', title: 'Выше', disabled: i === 0, onClick: () => move(arr, i, -1) }, '↑'),
@@ -45,7 +45,6 @@ export function worksView() {
   return root;
 }
 
-const HERO_POS = [['50% 0%', 'Верх'], ['50% 30%', 'Чуть выше центра'], ['50% 50%', 'Центр'], ['50% 80%', 'Низ']];
 
 export function workView(slug) {
   const w = state.works.works.find((x) => x.slug === slug);
@@ -81,7 +80,7 @@ export function workView(slug) {
       const isHero = !!w.hero && w.hero === th;
       grid.append(h('div', { class: 'media' },
         h('div', { class: 'thumb' }, h('img', { src: S.previewUrl(th), alt: '' }), isVid && h('span', { class: 'vid' }, 'видео'),
-          h('span', { class: 'flags' }, isCover && h('span', {}, 'обложка'), isHero && h('span', { class: 'teal' }, 'в арке'))),
+          h('span', { class: 'flags' }, isCover && h('span', {}, 'обложка'), isHero && h('span', { class: 'teal' }, 'на главной'))),
         h('div', { class: 'body' },
           (() => { const i1 = h('input', { class: 'inp', placeholder: 'Подпись (RU)', value: im.alt?.ru || '' }); i1.addEventListener('input', () => { im.alt = { ...im.alt, ru: i1.value }; touched(); }); return i1; })(),
           (() => { const i2 = h('input', { class: 'inp', placeholder: 'Caption (EN)', value: im.alt?.en || '' }); i2.addEventListener('input', () => { im.alt = { ...im.alt, en: i2.value }; touched(); }); return i2; })(),
@@ -89,20 +88,13 @@ export function workView(slug) {
             h('button', { class: 'ico', title: 'Влево', disabled: i === 0, onClick: () => { S.moveItem(w.images, i, -1); touched(); drawGrid(); } }, '←'),
             h('button', { class: 'ico', title: 'Вправо', disabled: i === w.images.length - 1, onClick: () => { S.moveItem(w.images, i, 1); touched(); drawGrid(); } }, '→'),
             h('button', { class: `ico${isCover ? ' on' : ''}`, title: 'Сделать обложкой карточки', onClick: () => { S.setCover(w, im); touched(); drawGrid(); } }, '▣'),
-            h('button', { class: `ico${isHero ? ' on' : ''}`, title: isHero ? 'Убрать из арки на главном экране' : 'Показывать в арке на главном экране', onClick: () => { w.hero = isHero ? '' : th; touched(); drawGrid(); drawPos(); } }, '◖'),
-            h('button', { class: 'ico danger', title: 'Удалить', onClick: async () => { if (await confirmBox('Удалить этот материал из работы? Файл будет удалён при публикации.', { ok: 'Удалить', danger: true })) { S.removeImage(w, i); drawGrid(); drawPos(); } } }, '✕')))));
+            h('button', { class: `ico${isHero ? ' on' : ''}`, title: isHero ? 'Убрать с главного экрана' : 'Показывать на главном экране', onClick: () => { if (isHero) { w.hero = ''; w.heroW = 0; w.heroH = 0; } else { w.hero = th; w.heroW = im.w; w.heroH = im.h; } touched(); drawGrid(); } }, '◖'),
+            h('button', { class: 'ico danger', title: 'Удалить', onClick: async () => { if (await confirmBox('Удалить этот материал из работы? Файл будет удалён при публикации.', { ok: 'Удалить', danger: true })) { S.removeImage(w, i); drawGrid(); } } }, '✕')))));
     });
     if (w.cover && !w.images.some((im) => (im.type === 'video' ? im.poster : im.thumb) === w.cover)) {
       grid.append(h('div', { class: 'media' }, h('div', { class: 'thumb' }, h('img', { src: S.previewUrl(w.cover), alt: '' }), h('span', { class: 'flags' }, h('span', {}, 'особая обложка'))),
         h('div', { class: 'body' }, h('p', { class: 'hint' }, 'Обложка собрана отдельно из нескольких материалов.'), h('button', { class: 'btn small', onClick: () => { if (w.images[0]) S.setCover(w, w.images[0]); touched(); drawGrid(); } }, 'Заменить первым материалом'))));
     }
-  };
-  const posWrap = h('div');
-  const drawPos = () => {
-    posWrap.replaceChildren();
-    if (!w.hero) return;
-    const opts = HERO_POS.some(([p]) => p === w.heroPos) ? HERO_POS : [...HERO_POS, [w.heroPos, `Своё (${w.heroPos})`]];
-    posWrap.append(selectField(w, 'heroPos', 'Положение кадра в арке на главном экране', opts));
   };
   const drop = h('label', { class: 'drop' }, h('strong', {}, 'Добавить изображения или видео'), h('span', {}, 'Перетащите файлы сюда или нажмите. JPG, PNG, WebP; видео MP4 или WebM до 25 МБ.'),
     h('input', { type: 'file', multiple: true, accept: 'image/*,video/mp4,video/webm' }));
@@ -112,14 +104,14 @@ export function workView(slug) {
     const { added, errors } = await S.addImages(w, [...files]);
     errors.forEach((m) => toast(m, 'err'));
     status.textContent = added.length ? `Добавлено: ${added.length}. Не забудьте нажать «Опубликовать».` : '';
-    drawGrid(); drawPos();
+    drawGrid();
   };
   drop.querySelector('input').addEventListener('change', (e) => { upload(e.target.files); e.target.value = ''; });
   drop.addEventListener('dragover', (e) => { e.preventDefault(); drop.classList.add('over'); });
   drop.addEventListener('dragleave', () => drop.classList.remove('over'));
   drop.addEventListener('drop', (e) => { e.preventDefault(); drop.classList.remove('over'); upload(e.dataTransfer.files); });
-  drawGrid(); drawPos();
-  gallery.append(grid, drop, status, h('p', { class: 'hint' }, '▣ — обложка карточки в списке работ. ◖ — показывать этот кадр в арке на главном экране.'), posWrap);
+  drawGrid();
+  gallery.append(grid, drop, status, h('p', { class: 'hint' }, '▣ — обложка карточки в списке работ. ◖ — показывать этот кадр целиком в подборке на главном экране (рядом с названием).'));
 
   const danger = h('div', { class: 'card' }, h('h2', {}, 'Удаление'),
     h('p', { class: 'hint' }, 'Работа и все её файлы будут удалены из репозитория при публикации. До публикации можно отменить через раздел «Публикация».'),

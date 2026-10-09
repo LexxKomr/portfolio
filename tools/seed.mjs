@@ -83,14 +83,8 @@ for (const w of works) {
     coverPath = `assets/works/${w.slug}/cover.webp`;
     cover = { w: W, h: H };
   }
-  let hero = w.heroIndex !== undefined ? images[w.heroIndex].thumb : '';
-  if (w.heroCrop) {
-    const it = w.images[w.heroIndex];
-    await sharp(resolveSrc(it.src), { limitInputPixels: false })
-      .extract(w.heroCrop).resize({ width: 1000 }).webp({ quality: 80 })
-      .toFile(path.join(dir, 'hero.webp'));
-    hero = `assets/works/${w.slug}/hero.webp`;
-  }
+  const heroImg = w.heroIndex !== undefined ? images[w.heroIndex] : null;
+  const hero = heroImg ? (heroImg.type === 'video' ? heroImg.poster : heroImg.thumb) : '';
   outWorks.push({
     id: w.slug, slug: w.slug, category: w.category, year: w.year, order: ++order,
     visible: true, featured: !!w.featured,
@@ -98,7 +92,7 @@ for (const w of works) {
     title: w.title, summary: w.summary, task: w.task, solution: w.solution,
     cover: coverPath,
     hero,
-    heroPos: w.heroPos || '50% 30%',
+    heroW: heroImg ? heroImg.w : 0, heroH: heroImg ? heroImg.h : 0,
     coverW: cover.w, coverH: cover.h,
     images,
   });

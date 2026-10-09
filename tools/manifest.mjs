@@ -18,7 +18,7 @@ const brand = { ru: 'Работа в штате · Группа «Борлас»
 // i: изображение (src относительно SRC, либо абсолютный путь в STAGING), v: видео
 export const works = [
   {
-    slug: 'cae-day', heroIndex: 0, heroCrop: { left: 0, top: 740, width: 1520, height: 1900 }, category: 'brand', year: '2025', featured: true,
+    slug: 'cae-day', heroIndex: 0, category: 'brand', year: '2025', featured: true,
     client: { ru: 'Группа «Борлас» × Fidesys', en: 'Borlas Group × Fidesys' }, badge: brand,
     role: { ru: 'Айдентика мероприятия, digital-материалы, адаптации', en: 'Event identity, digital assets, adaptations' },
     tags: ['Photoshop', 'Illustrator', 'After Effects'],
@@ -65,7 +65,7 @@ export const works = [
     ],
   },
   {
-    slug: 'fidesys-promo', heroIndex: 1, category: 'digital', year: '2026', featured: true,
+    slug: 'fidesys-promo', heroIndex: 0, category: 'digital', year: '2026', featured: true,
     client: { ru: 'Группа «Борлас» × Fidesys', en: 'Borlas Group × Fidesys' }, badge: brand,
     role: { ru: 'Баннеры в трёх форматах', en: 'Banners in three formats' },
     tags: ['Photoshop', 'Adaptive layout'],
@@ -162,7 +162,7 @@ export const works = [
     ],
   },
   {
-    slug: 'server-cabinet', heroIndex: 0, heroPos: '50% 58%', category: 'expo', year: '2026',
+    slug: 'server-cabinet', heroIndex: 0, category: 'expo', year: '2026',
     client: { ru: 'Борлас × НПЦ БАС ЯО', en: 'Borlas × NPC BAS YaO' }, badge: brand,
     role: { ru: 'Графика брендинга серверного шкафа', en: 'Server-cabinet branding artwork' },
     tags: ['Illustrator', 'Large format'],

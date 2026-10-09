@@ -85,7 +85,7 @@ try {
   assert.equal(await page.evaluate(() => document.querySelector('.flags span')?.textContent), 'обложка'); log('первая загрузка стала обложкой');
   await (await page.$('.card input[type=checkbox]')).click();
   await fill((await page.$$('.card .pair input'))[0], 'Тестовая работа');
-  await click('.media .ico[title^="Показывать в арке"]');
+  await click('.media .ico[title^="Показывать на главном"]');
 
   console.log('тексты и оформление');
   await page.goto(ADMIN + '#/texts/hero'); await page.waitForSelector('.card .pair');

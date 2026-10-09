@@ -100,8 +100,7 @@
         "en": "A diagonal splits the layout into a warm and a cool half: the Borlas orange meets the Fidesys teal-blue. A turbine simulation model sits at the centre and explains the topic at a glance. The same device scales from an 840×200 banner to a full-page ad module"
       },
       "cover": "assets/works/cae-day/01-thumb.webp",
-      "hero": "assets/works/cae-day/hero.webp",
-      "heroPos": "50% 30%",
+      "hero": "assets/works/cae-day/01-thumb.webp",
       "coverW": 1800,
       "coverH": 2340,
       "images": [
@@ -149,7 +148,9 @@
             "en": "CAE Day pop-up"
           }
         }
-      ]
+      ],
+      "heroW": 1800,
+      "heroH": 2340
     },
     {
       "id": "bi-system",
@@ -319,8 +320,7 @@
         "en": "A large orange panel carries the headline and a grey one holds the dates. Background stripes add movement and re-flow for each format without losing hierarchy"
       },
       "cover": "assets/works/fidesys-promo/01-thumb.webp",
-      "hero": "assets/works/fidesys-promo/02-thumb.webp",
-      "heroPos": "50% 30%",
+      "hero": "assets/works/fidesys-promo/01-thumb.webp",
       "coverW": 1800,
       "coverH": 1013,
       "images": [
@@ -368,7 +368,9 @@
             "en": "Promo illustration for “Preferentum”"
           }
         }
-      ]
+      ],
+      "heroW": 1800,
+      "heroH": 1013
     },
     {
       "id": "motion-banners",
@@ -665,7 +667,6 @@
       },
       "cover": "assets/works/greetings/01-thumb.webp",
       "hero": "assets/works/greetings/01-thumb.webp",
-      "heroPos": "50% 30%",
       "coverW": 1800,
       "coverH": 1590,
       "images": [
@@ -724,7 +725,9 @@
             "en": "Ecologist’s Day card"
           }
         }
-      ]
+      ],
+      "heroW": 1800,
+      "heroH": 1590
     },
     {
       "id": "expo-stand",
@@ -860,7 +863,6 @@
       },
       "cover": "assets/works/server-cabinet/01-thumb.webp",
       "hero": "assets/works/server-cabinet/01-thumb.webp",
-      "heroPos": "50% 58%",
       "coverW": 1735,
       "coverH": 3200,
       "images": [
@@ -897,7 +899,9 @@
             "en": "Cabinet mockup, view 2"
           }
         }
-      ]
+      ],
+      "heroW": 1735,
+      "heroH": 3200
     },
     {
       "id": "cards-certificates",

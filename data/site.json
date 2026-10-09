@@ -100,8 +100,8 @@
     ],
     "statLabels": {
       "cases": {
-        "ru": "кейсов в портфолио",
-        "en": "case studies"
+        "ru": "",
+        "en": ""
       },
       "directions": {
         "ru": "направлений работы",

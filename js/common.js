@@ -98,7 +98,8 @@ export const icon = (n) => I[n] || I.star;
 export function renderHeader(site, { home = false } = {}) {
   const ui = site.ui;
   const prefix = home ? '' : url('index.html');
-  const name = t(site.person.name);
+  // в шапке слева — короткая строка о специализации (hero.eyebrow); если её нет, показываем имя
+  const name = t(site.hero?.eyebrow) || t(site.person.name);
   const nav = [];
   if (site.sections.work) nav.push(`<a href="${prefix}#work">${esc(t(ui.menuWork))}</a>`);
   if (site.sections.about) nav.push(`<a href="${prefix}#about">${esc(t(ui.menuAbout))}</a>`);

@@ -67,7 +67,6 @@ function hero(site) {
   return `
   <section class="hero" id="top">
     <div class="hero-copy">
-      <p class="eyebrow">${sparkle()}${esc(t(h.eyebrow))}</p>
       <h1 class="hero-title" aria-label="${esc(t(h.line1) + t(h.line2))}">
         <span class="ln" aria-hidden="true"><span>${esc(t(h.line1))}</span></span>
         <span class="ln" aria-hidden="true"><span>${titleLine2(t(h.line2))}</span></span>

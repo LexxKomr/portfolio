@@ -156,6 +156,16 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .cta-arch::after { content: ''; position: absolute; right: -12%; bottom: -10%; width: 42%; aspect-ratio: 1; border-radius: 50%; background: var(--ink); }
 .cta-arch .spark { position: absolute; left: 13%; bottom: 7%; width: 34px; height: 34px; fill: var(--orange); z-index: 1; }
 .cta-arch:hover .badge-ico { background: var(--cobalt); }
+@media (min-width: 901px) {
+  /* на ПК арка растягивается на высоту соседней панели: контент по центру, значок в одной группе с текстом */
+  .cta-arch { text-align: center; justify-items: center; align-content: center; gap: 16px; padding: 72px 30px 214px; }
+  .cta-arch > .badge-ico { position: relative; top: auto; left: auto; transform: none; margin-bottom: 8px; }
+  .cta-arch h3 { text-wrap: balance; }
+  .cta-arch p { max-width: 26ch; }
+  .cta-arch::before { left: -12%; bottom: -64px; width: 62%; }
+  .cta-arch::after { right: -10%; bottom: -44px; width: 38%; }
+  .cta-arch .spark { left: 38%; bottom: 74px; }
+}
 
 /* услуги */
 .panel-skills { grid-column: 2; grid-row: 2; background: var(--teal); color: #fff; border-radius: clamp(36px, 6vw, 80px) 0 0 0; padding: clamp(28px, 4.5vw, 60px) clamp(18px, 4vw, 64px) clamp(30px, 4vw, 56px) clamp(22px, 4vw, 64px); }
